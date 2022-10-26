@@ -1,0 +1,101 @@
+.cards {
+  &__list {
+    counter-reset: cards;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+    counter-increment: cards;
+    position: relative;
+    padding: 100px 54px 53px;
+    min-height: 292px;
+    background: url("../img/card-panel.svg") top no-repeat;
+
+    &::before {
+      content: "0" counter(cards) "/";
+      position: absolute;
+      left: 13px;
+      top: -15px;
+      font-family: "AlumniSans", sans-serif;
+      font-weight: 500;
+      font-size: 36px;
+      text-transform: uppercase;
+      color: $accent-color;
+    }
+
+    &::after {
+      @include triangle;
+
+      content: "";
+      position: absolute;
+      right: 37px;
+      top: 33px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-bottom: 40px;
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: $g1-color;
+
+      > li {
+        @include mb(5px);
+      }
+    }
+
+    &--big {
+      padding: 88px 64px 63px;
+      min-height: 590px;
+      background-image: url("../img/card-panel-big.svg");
+
+      &::after {
+        right: 34px;
+        top: 24px;
+      }
+    }
+  }
+
+  &__item-inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__icon {
+    @include circle(64px, transparent);
+    @include flex-all-center;
+
+    flex-shrink: 0;
+    border: 2px solid $g2-color;
+  }
+
+  &__info {
+    margin-left: 27px;
+    color: $g1-color;
+
+    p {
+      max-width: 207px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+  }
+
+  &__name {
+    margin-bottom: 22px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: $light-color;
+  }
+}

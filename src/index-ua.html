@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ua" class="page">
+
+@include('partials/ua/head.html')
+
+<body class="page__body">
+  <div class="page__content">
+    @include('partials/ua/header.html')
+
+    <main class="main">
+      @include('partials/ua/hero.html')
+      @include('partials/ua/video.html', {
+        "title": "ДИЛЕРСьКИЙ рівень ДіАГНОСТИКИ",
+        "subtitle": "Для всіх електронних систем 94 марок ЄВРОПИ, АЗІЇ, США і СНД",
+        "preview": "img/video-preview-1.jpg",
+        "containerClasses": "video__container--accent video__container--border",
+        "video": "video/autel-1.mp4",
+        "classes": ""
+      })
+      @include('partials/ua/compare.html')
+      @include('partials/ua/examples.html')
+      @include('partials/ua/remote.html')
+      @include('partials/ua/complect.html')
+      @include('partials/ua/maxiscope.html')
+      @include('partials/ua/comfort.html')
+      @include('partials/ua/tests.html')
+      @include('partials/ua/documentation.html')
+      @include('partials/ua/chars.html')
+      @include('partials/ua/study.html')
+      @include('partials/ua/garanty.html')
+      @include('partials/ua/trust.html')
+      @include('partials/ua/video.html', {
+        "title": "інновації Autel",
+        "subtitle": "Майбутнє автомобільної діагностики",
+        "preview": "img/video-preview-2.jpg",
+        "containerClasses": "",
+        "video": "video/autel.mp4",
+        "classes": "section-offset"
+      })
+      @include('partials/ua/partners.html')
+    </main>
+
+    @include('partials/ua/footer.html')
+    @include('partials/ua/modals/modals.html')
+  </div>
+</body>
+
+</html>

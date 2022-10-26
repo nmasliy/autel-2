@@ -1,0 +1,225 @@
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  transition: $transition;
+
+  &__phone-mob {
+    display: none;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-left: 70px;
+    padding: 24px 30px 24px 67px;
+    width: 155px;
+    color: $g4-color;
+    background: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 2.41846L3 6.41846V20.4185C3 20.9489 3.21071 21.4576 3.58579 21.8327C3.96086 22.2077 4.46957 22.4185 5 22.4185H19C19.5304 22.4185 20.0391 22.2077 20.4142 21.8327C20.7893 21.4576 21 20.9489 21 20.4185V6.41846L18 2.41846H6Z' stroke='%23343535' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 6.41846H21' stroke='%23343535' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 10.4185C16 11.4793 15.5786 12.4967 14.8284 13.2469C14.0783 13.997 13.0609 14.4185 12 14.4185C10.9391 14.4185 9.92172 13.997 9.17157 13.2469C8.42143 12.4967 8 11.4793 8 10.4185' stroke='%23343535' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") left 29px center / 24px no-repeat;
+    background-color: $light-color;
+    transition: $transition;
+
+    &:hover {
+      color: $accent-color;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 2.41846L3 6.41846V20.4185C3 20.9489 3.21071 21.4576 3.58579 21.8327C3.96086 22.2077 4.46957 22.4185 5 22.4185H19C19.5304 22.4185 20.0391 22.2077 20.4142 21.8327C20.7893 21.4576 21 20.9489 21 20.4185V6.41846L18 2.41846H6Z' stroke='%23D2232A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 6.41846H21' stroke='%23D2232A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 10.4185C16 11.4793 15.5786 12.4967 14.8284 13.2469C14.0783 13.997 13.0609 14.4185 12 14.4185C10.9391 14.4185 9.92172 13.997 9.17157 13.2469C8.42143 12.4967 8 11.4793 8 10.4185' stroke='%23D2232A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  &__top {
+    background-color: $accent-color;
+  }
+
+  &__top-container {
+    @include flex-v-center;
+  }
+
+  &__bottom {
+    background-color: rgba($g4-color, 0.3);
+    backdrop-filter: blur(2.5px);
+
+    .nav {
+      &__list {
+        justify-content: center;
+      }
+
+      &__item {
+        flex-shrink: 0;
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__bottom-container {
+    @include flex-v-center;
+  }
+
+  &__col {
+    width: 270px;
+  }
+
+  &__phone {
+    position: relative;
+    margin-right: auto;
+    margin-left: 70px;
+    padding: 5px 0 5px 32px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    transition: $transition;
+
+    &::before {
+      @include circle(26px);
+
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      background: url("../img/phone-icon.svg") center no-repeat;
+      background-color: $accent-color;
+      transform: translateY(-50%);
+    }
+
+    @include hover {
+      color: rgba($accent-color, 0.8);
+    }
+  }
+
+  &.is-active {
+    .header {
+      &__top {
+        background-color: $black-color;
+      }
+
+      &__phone-mob {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.nav {
+  flex-grow: 1;
+
+  &__list {
+    @include flex-sb;
+  }
+
+  &__item {
+    margin-right: 30px;
+    color: $light-color;
+
+    > a {
+      display: inline-block;
+      padding: 24px 5px;
+      transition: $transition;
+
+      @include hover {
+        color: rgba($light-color, 0.8);
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--hover-bg {
+      > a {
+        transition: $transition;
+
+        @include hover {
+          color: $accent-color;
+          background-color: $light-color;
+        }
+      }
+    }
+
+    &--hover-accent {
+      > a {
+        transition: $transition;
+
+        @include hover {
+          color: $accent-color;
+        }
+      }
+    }
+
+    &--submenu {
+      position: relative;
+      margin-right: 0;
+      min-width: 138px;
+
+      > a {
+        > span {
+          position: relative;
+          padding-right: 20px;
+          padding-left: 16px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 6px;
+            width: 11px;
+            height: 7px;
+            background: url("../img/arrow-down-icon.svg") center no-repeat;
+          }
+        }
+      }
+
+      > ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 3;
+        display: none;
+        border-radius: 2px;
+        padding: 8px;
+        width: 100%;
+        color: #181818;
+        background-color: $light-color;
+
+        > li > a {
+          position: relative;
+          display: inline-block;
+          padding: 8px 0 8px 20px;
+          transition: $transition;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 11px;
+            border-radius: 1px;
+            width: 6px;
+            height: 6px;
+            background-color: #181818;
+            transition: $transition;
+          }
+
+          @include hover {
+            color: $accent-color;
+
+            &::before {
+              background-color: $accent-color;
+            }
+          }
+        }
+      }
+
+      @include hover {
+        background-color: rgba(0, 0, 0, 14%);
+
+        > ul {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/ui";
+@import "./components/cards";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/video";
+@import "./components/compare";
+@import "./components/recharge";
+@import "./components/support";
+@import "./components/settings";
+@import "./components/remote";
+@import "./components/complect";
+@import "./components/maxiscope";
+@import "./components/report";
+@import "./components/comfort";
+@import "./components/tests";
+@import "./components/documentation";
+@import "./components/chars";
+@import "./components/study";
+@import "./components/garanty";
+@import "./components/trust";
+@import "./components/partners";
+@import "./components/footer";
+
+// адаптив
+@import "media";

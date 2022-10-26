@@ -1,0 +1,71 @@
+.study {
+  background: url("../img/complect-bg.png") no-repeat center / cover;
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 852px;
+  }
+
+  &__items {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid $g2-color;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 90%);
+    backdrop-filter: blur(4px);
+  }
+
+  &__item {
+    @include flex-all-center;
+
+    position: relative;
+    padding: 19px 25px;
+
+    &::after {
+      @include triangle;
+
+      content: "";
+      position: absolute;
+      right: 18px;
+      top: 18px;
+    }
+
+    p {
+      max-width: 240px;
+      line-height: 1.4;
+    }
+
+    &:first-child {
+      border-right: 1px solid $g2-color;
+
+      p {
+        max-width: 190px;
+      }
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $g1-color;
+
+    span {
+      margin-right: 12px;
+      font-size: 60px;
+      color: $accent-color;
+    }
+  }
+}

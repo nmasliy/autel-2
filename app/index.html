@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Autel</title>
+  <link rel="preload" href="fonts/AlumniSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueCyr-Roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body class="page__body">
+  <div class="page__content">
+    <header class="header">
+  <div class="header__top">
+    <div class="header__top-container container container--lg">
+      <a class="header__logo header__col" href="./">
+        <img width="203" height="40" src="img/logo.svg" alt="autel">
+      </a>
+      <nav class="nav" title="site navigation">
+  <ul class="nav__list">
+    <li class="nav__item nav__item--hover-bg"><a href="#" data-menu-item>О компании</a></li>
+    <li class="nav__item"><a href="#" data-menu-item>Где купить</a></li>
+    <li class="nav__item"><a href="#" data-menu-item>Блог</a></li>
+    <li class="nav__item"><a href="#" data-menu-item>Курсы</a></li>
+    <li class="nav__item nav__item--submenu">
+      <a href="#"><span>Продукты</span></a>
+      <ul>
+        <li><a href="#" data-menu-item>GrunBaum</a></li>
+        <li><a href="#" data-menu-item>Jaltest</a></li>
+        <li><a href="#" data-menu-item>BrainStorm</a></li>
+      </ul>
+    </li>
+    <li class="nav__item"><a href="#" data-menu-item>Контакты</a></li>
+  </ul>
+</nav>
+
+      <a class="header__btn" href="#">Магазин</a>
+      <a class="header__phone-mob" href="tel:+380503795456">+38 050 379 54 56</a>
+      <button class="burger" data-burger aria-label="Открыть меню">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="header__bottom-container container container--lg">
+      <nav class="nav" title="site navigation">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--hover-accent"><a href="#compare" data-menu-item data-scroll>Сравнение</a></li>
+          <li class="nav__item nav__item--hover-accent"><a href="#chars" data-menu-item data-scroll>Функции</a></li>
+          <li class="nav__item nav__item--hover-accent"><a href="#remote" data-menu-item data-scroll>Remote Expert</a></li>
+          <li class="nav__item nav__item--hover-accent"><a href="#study" data-menu-item data-scroll>Обучение</a></li>
+          <li class="nav__item nav__item--hover-accent"><a href="#partners" data-menu-item data-scroll>Партнеры</a></li>
+        </ul>
+      </nav>
+      <!-- <a class="header__phone" href="tel:+380503795456">+38 050 379 54 56</a> -->
+    </div>
+  </div>
+  <div class="menu" data-menu>
+    <div class="menu__buttons">
+      <a class="menu__btn btn-outline btn-outline--accent" href="#">Магазин</a>
+    </div>
+    <nav class="nav" title="site navigation">
+  <ul class="nav__list">
+    <li class="nav__item nav__item--hover-bg"><a href="#" data-menu-item>О компании</a></li>
+    <li class="nav__item"><a href="#" data-menu-item>Где купить</a></li>
+    <li class="nav__item"><a href="#" data-menu-item>Блог</a></li>
+    <li class="nav__item"><a href="#" data-menu-item>Курсы</a></li>
+    <li class="nav__item nav__item--submenu">
+      <a href="#"><span>Продукты</span></a>
+      <ul>
+        <li><a href="#" data-menu-item>GrunBaum</a></li>
+        <li><a href="#" data-menu-item>Jaltest</a></li>
+        <li><a href="#" data-menu-item>BrainStorm</a></li>
+      </ul>
+    </li>
+    <li class="nav__item"><a href="#" data-menu-item>Контакты</a></li>
+  </ul>
+</nav>
+
+    <!-- <a class="menu__phone" href="tel:+380503795456">+38 050 379 54 56</a> -->
+    <a class="menu__email" href="mailto:info@autel-ukraine.com.ua">info@autel-ukraine.com.ua</a>
+    <ul class="socials ">
+  <li><a href="#"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 10L9.25 7.5V12.5L13 10Z" stroke="#F4F4F4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.375 10C2.375 12.3282 2.61719 13.6875 2.79687 14.3907C2.84642 14.5815 2.94011 14.7579 3.07039 14.9058C3.20067 15.0538 3.36388 15.169 3.54688 15.2422C6.16406 16.2422 10.5 16.2188 10.5 16.2188C10.5 16.2188 14.8359 16.2422 17.4531 15.2422C17.6361 15.169 17.7993 15.0538 17.9296 14.9058C18.0599 14.7579 18.1536 14.5815 18.2031 14.3907C18.3828 13.6875 18.625 12.3282 18.625 10C18.625 7.67192 18.3828 6.31255 18.2031 5.60942C18.1536 5.41864 18.0599 5.24218 17.9296 5.09426C17.7993 4.94634 17.6361 4.83111 17.4531 4.75786C14.8359 3.75786 10.5 3.7813 10.5 3.7813C10.5 3.7813 6.16406 3.75786 3.54688 4.75786C3.36388 4.83111 3.20067 4.94634 3.07039 5.09426C2.94011 5.24218 2.84642 5.41864 2.79687 5.60942C2.61719 6.31255 2.375 7.67192 2.375 10Z" stroke="#F4F4F4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a></li>
+  <li><a href="#"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 13.125C12.2259 13.125 13.625 11.7259 13.625 10C13.625 8.27411 12.2259 6.875 10.5 6.875C8.77411 6.875 7.375 8.27411 7.375 10C7.375 11.7259 8.77411 13.125 10.5 13.125Z" stroke="#F4F4F4" stroke-miterlimit="10"/>
+<path d="M13.9375 2.8125H7.0625C4.99143 2.8125 3.3125 4.49143 3.3125 6.5625V13.4375C3.3125 15.5086 4.99143 17.1875 7.0625 17.1875H13.9375C16.0086 17.1875 17.6875 15.5086 17.6875 13.4375V6.5625C17.6875 4.49143 16.0086 2.8125 13.9375 2.8125Z" stroke="#F4F4F4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 6.25C15 6.31904 14.944 6.375 14.875 6.375C14.806 6.375 14.75 6.31904 14.75 6.25C14.75 6.18096 14.806 6.125 14.875 6.125C14.944 6.125 15 6.18096 15 6.25Z" fill="#F4F4F4" stroke="#F4F4F4"/>
+</svg>
+</a></li>
+  <li><a href="#"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 17.5C14.6421 17.5 18 14.1421 18 10C18 5.85786 14.6421 2.5 10.5 2.5C6.35786 2.5 3 5.85786 3 10C3 14.1421 6.35786 17.5 10.5 17.5Z" stroke="#F4F4F4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.625 6.87502H12.375C12.1285 6.87398 11.8842 6.92178 11.6563 7.01564C11.4283 7.1095 11.2212 7.24757 11.0469 7.42189C10.8726 7.5962 10.7345 7.80331 10.6406 8.03126C10.5468 8.25922 10.499 8.5035 10.5 8.75002V17.5" stroke="#F4F4F4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 11.25H13" stroke="#F4F4F4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a></li>
+</ul>
+
+  </div>
+  <div class="overlay" data-menu-overlay></div>
+</header>
+
+
+    <main class="main">
+      <section class="hero section-offset">
+  <div class="container">
+    <div class="hero__inner">
+      <h1 class="hero__title section-title centered"><span>MaxiSys</span> MS906&nbsp;Pro & MS906&nbsp;Pro&nbsp;MAX</h1>
+      <p class="hero__subtitle centered">Решение для профессиональных постов диагностики</p>
+      <div class="hero__img">
+        <picture>
+          <source srcset="img/hero-items.webp 1x, img/hero-items@2x.webp 2x" type="image/webp">
+          <img loading="lazy" src="img/hero-items.png" srcset="img/hero-items.png 1x, img/hero-items@2x.png 2x"
+            width="1051" height="577" alt="MaxiSys MS906 Pro & MS906 Pro MAX">
+        </picture>
+      </div>
+      <div class="hero__img-mob">
+        <picture>
+          <source srcset="img/hero-items-mob.webp" type="image/webp">
+          <img loading="lazy" src="img/hero-items-mob.png" srcset="img/hero-items-mob.png" width="365"
+            height="216" alt="MaxiSys MS906 Pro & MS906 Pro MAX">
+        </picture>
+      </div>
+      <div class="hero__items">
+        <div class="hero__item">MaxiSys MS906 PRO MAX</div>
+        <div class="hero__item">MaxiSys MS906 PRO</div>
+      </div>
+      <div class="hero-benefits">
+        <ul class="hero-benefits__list">
+          <li class="hero-benefits__item">
+            <div class="hero-benefits__icon">
+              <img src="img/wrench-icon.svg" width="24" height="24" alt="wrench">
+            </div>
+            <div class="hero-benefits__text">На 30% производительнее MaxiSys MS906BT</div>
+          </li>
+          <li class="hero-benefits__item">
+            <div class="hero-benefits__icon">
+              <img src="img/car-icon.svg" width="24" height="24" alt="car">
+            </div>
+            <div class="hero-benefits__text">Поддержка DoIP и SGW</div>
+          </li>
+          <li class="hero-benefits__item">
+            <div class="hero-benefits__icon">
+              <img src="img/check-circle-icon.svg" width="24" height="24" alt="check">
+            </div>
+            <div class="hero-benefits__text">Инструменты для работы с ECU</div>
+          </li>
+          <li class="hero-benefits__item">
+            <div class="hero-benefits__icon">
+              <img src="img/battery-icon.svg" width="24" height="24" alt="battery">
+            </div>
+            <div class="hero-benefits__text">Удаленный помощник REMOTE EXPERT</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="hero__circle"></div>
+</section>
+
+      <section class="video">
+  <div class="video__container container container--lg video__container--accent video__container--border" style="background-image: url('img/video-preview-1.jpg');">
+    <div class="video__inner">
+      <h2 class="video__title section-title centered">Решение для тех, кто ценит свое время и свой труд</h2>
+      <button class="btn-reset player-icon video__play" data-video-src="video/autel-1.mp4" data-video-trigger data-modal-open="modal-video">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section class="compare section-offset" id="compare">
+  <div class="container">
+    <div class="compare__inner">
+      <h2 class="section-title centered">CДЕЛАЕТ РАБОТУ НА 30% БЫСТРЕЕ </h2>
+      <p class="compare__subtitle section-subtitle centered">Краткий тест на 3-5 минут быстрее, <br>
+        чем&nbsp;на MaxiSys MS906BT</p>
+      <div class="compare__table">
+        <table>
+          <tr>
+            <td class="compare__table-title">ХАРАКТЕРИСТИКИ</td>
+            <td>
+              <picture>
+                <source srcset="img/characteristics-2.webp 1x, img/characteristics-2@2x.webp 2x" type="image/webp">
+                <img loading="lazy" src="img/characteristics-2.png"
+                  srcset="img/characteristics-2.png 1x, img/characteristics-2@2x.png 2x" width="218" height="146"
+                  alt="MS906 Pro">
+              </picture>
+            </td>
+            <td>
+              <picture>
+                <source srcset="img/ms906pro.webp 1x, img/ms906pro@2x.webp 2x" type="image/webp">
+                <img loading="lazy" src="img/ms906pro.png" srcset="img/ms906pro.png 1x, img/ms906pro@2x.png 2x"
+                  width="196" height="123" alt="ms906pro">
+              </picture>
+            </td>
+          </tr>
+          <tr>
+            <td>Конфигурация планшета</td>
+            <td class="compare__table-title color-accent">MS906BT</td>
+            <td class="compare__table-title color-accent">MS906 Pro</td>
+          </tr>
+          <tr>
+            <td>Процессор</td>
+            <td>
+              <div class="compare__desc-item text-medium">Qualcomm 660</div>
+              <div class="compare__desc-item">2.3GHz + 1.7GHz</div>
+              <div class="compare__desc-item">OCTA - CORE</div>
+            </td>
+            <td>
+              <div class="compare__desc-item text-medium">Samsung Exynos</div>
+              <div class="compare__desc-item">1.3GHz +1.7GHz</div>
+              <div class="compare__desc-item">HEXA - CORE</div>
+            </td>
+          </tr>
+          <tr>
+            <td>Объем памяти</td>
+            <td>128GB SDD</td>
+            <td>64GB SSD</td>
+          </tr>
+          <tr>
+            <td>Оперативная память</td>
+            <td>4GB RAM</td>
+            <td>2GB RAM</td>
+          </tr>
+          <tr class="compare__table-bottom">
+            <td class="compare__table-empty">
+              <div class="compare__table-title">Результат:</div>
+              <div class="compare__table-sm">Время краткого теста на Mercedes E212</div>
+            </td>
+            <td class="compare__table-empty compare__table-title color-white">3 мин 50 сек</td>
+            <td class="compare__table-empty compare__table-title color-white">3 мин 12 сек</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="recharge section-offset" id="recharge">
+  <div class="container">
+    <div class="recharge__inner">
+      <h2 class="section-title centered">Рабочая смена без подзарядки</h2>
+      <p class="recharge__subtitle section-subtitle centered">Новый АКБ на 16% больше предшественника</p>
+      <div class="recharge__items">
+        <div class="recharge__item recharge__item--black">
+          <div class="recharge__label">/ было</div>
+          <div class="recharge__name">MaxiSys MS906BT</div>
+          <div class="recharge__info">
+            <div class="recharge__icon">
+              <img src="img/examples-battery.svg" width="84" height="84" alt="">
+            </div>
+            <div class="recharge__hours">8</div>
+            <div class="recharge__text">часов работы <br> без зарядки</div>
+          </div>
+          <div class="recharge__footer">
+            <div class="recharge__footer-info">
+              <div class="recharge__caption">Емкость АКБ: <span>10 000 мАч</span></div>
+            </div>
+            <div class="recharge__bar">
+              <div class="recharge__bar-fill"></div>
+            </div>
+          </div>
+        </div>
+        <div class="recharge__arrow">
+          <img src="img/arrow-white-long.svg" width="75" height="32" alt="">
+        </div>
+        <div class="recharge__item recharge__item--white">
+          <div class="recharge__label">/ стало</div>
+          <div class="recharge__name">MaxiSys MS906 Pro</div>
+          <div class="recharge__info">
+            <div class="recharge__icon">
+              <img src="img/examples-battery-2.svg" width="84" height="84" alt="">
+            </div>
+            <div class="recharge__hours">10</div>
+            <div class="recharge__text">часов работы <br> без зарядки</div>
+          </div>
+          <div class="recharge__footer">
+            <div class="recharge__footer-info">
+              <div class="recharge__caption">Емкость АКБ: <span>11 600 мАч</span></div>
+              <div class="recharge__value">+16 %</div>
+            </div>
+            <div class="recharge__bar">
+              <div class="recharge__bar-fill" style="width: 86px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recharge__bottom">
+        <div class="recharge__bottom-icon">
+          <img src="img/charging-icon.svg" width="24" height="24" alt="">
+        </div>
+        <div class="recharge__bottom-title">Условия тестирования:</div>
+        <ul class="recharge__list">
+          <li>здесь будет текст</li>
+          <li>здесь будет текст</li>
+          <li>здесь будет текст</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="support section-offset" id="support">
+  <div class="container">
+    <div class="support__inner">
+      <div class="support__content">
+        <div class="support__left">
+          <h2 class="section-title">Поддержка протокола <span>DoIP</span> и доступ к&nbsp;системам Security Gateway
+            (SGW)</h2>
+          <p class="support__subtitle section-subtitle">Фокусируемся на возможности доступов к последним
+            <span class="support__subtitle-break">моделям для наших пользователей</span></p>
+        </div>
+        <div class="support__right">
+          <div class="support__list-title">Нашим клиентам доступны подписки SGW:</div>
+          <ol class="support__list">
+            <li>Hyundai / KIA SGW</li>
+            <li>Renault Group (Renault, Nissan, Dacia)</li>
+            <li>FCA SGW (Fiat, Chrysler)</li>
+          </ol>
+          <div class="support__list-title">В разработке sGW:</div>
+          <ol class="support__list support__list--grey">
+            <li>Volkswagen Group SGW (VW, AUDI, SKODA, SEAT)</li>
+            <li>Mercedes Benz SGW</li>
+          </ol>
+        </div>
+      </div>
+      <div class="support__videos">
+        <div class="support__video" data-video-src="video/remote.mp4" data-video-poster="" data-video-trigger
+          data-modal-open="modal-video">
+          <div class="support__preview">
+            <picture>
+              <source srcset="img/support-preview.webp 1x, img/support-preview@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/support-preview.jpg"
+                srcset="img/support-preview.jpg 1x, img/support-preview@2x.jpg 2x" width="527" height="212"
+                alt="т">
+            </picture>
+            <div class="support__preview-info">
+              <div class="support__play player-icon-sm">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+              </div>
+              <button class="btn-link">Что такое SGW?</button>
+            </div>
+          </div>
+        </div>
+        <div class="support__video" data-video-src="video/remote.mp4" data-video-poster="" data-video-trigger
+          data-modal-open="modal-video">
+          <div class="support__preview">
+            <picture>
+              <source srcset="img/support-preview-2.webp 1x, img/support-preview-2@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/support-preview-2.jpg"
+                srcset="img/support-preview-2.jpg 1x, img/support-preview-2@2x.jpg 2x" width="527" height="212"
+                alt="т">
+            </picture>
+            <div class="support__preview-info">
+              <div class="support__play player-icon-sm">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+              </div>
+              <button class="btn-link">ВИДЕООБЗОР RENAULT SGW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="settings section-offset" id="settings">
+  <div class="container container--sm">
+    <div class="settings__inner">
+      <h2 class="section-title centered">ПОЗВОЛИТ РАБОТАТЬ С ECU и <br> НАСТРОЙКАМИ ПОЛЬЗОВАТЕЛЕЙ</h2>
+      <p class="settings__subtitle section-subtitle centered">Инструменты для штатной работы с блоками управления</p>
+      <div class="settings__main">
+        <div class="settings__col">
+          <div class="settings__list-item">
+            <div class="settings__list-num">01/</div>
+            <div class="settings__list-text">Code cloud backup</div>
+          </div>
+          <div class="settings__list-item">
+            <div class="settings__list-num">02/</div>
+            <div class="settings__list-text">Backup/Restore vehicle <br> individual coding data</div>
+          </div>
+        </div>
+        <div class="settings__col settings__img">
+          <picture>
+            <source srcset="img/settings.webp 1x, img/settings@2x.webp 2x" type="image/webp">
+            <img loading="lazy" src="img/settings.png" srcset="img/settings.png 1x, img/settings@2x.png 2x" width="524"
+              height="380" alt="autel">
+          </picture>
+        </div>
+        <div class="settings__col">
+          <div class="settings__list-item">
+            <div class="settings__list-num">03/</div>
+            <div class="settings__list-text">Backup/Restore Software Calibration Number (SCN) code</div>
+          </div>
+          <div class="settings__list-item">
+            <div class="settings__list-num">04/</div>
+            <div class="settings__list-text">Cheat coding (BMW) и Retrofit (Mercedes).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="settings__footer">
+    <div class="container">
+      <div class="settings__footer-title">Какие работы вы сможете выполнять самостоятельно?</div>
+      <ul class="settings__items">
+        <li class="settings__item">
+          <div class="settings__icon">
+            <img src="img/shuffle-icon.svg" width="20" height="20" alt="">
+          </div>
+          <div class="settings__item-text">Замена блоков <br> управления</div>
+        </li>
+        <li class="settings__item">
+          <div class="settings__icon">
+            <img src="img/settings-icon.svg" width="24" height="24" alt="">
+          </div>
+          <div class="settings__item-text">Изменения  <br> пользовательских <br> настроек</div>
+        </li>
+        <li class="settings__item">
+          <div class="settings__icon">
+            <img src="img/settings-2-icon.svg" width="24" height="24" alt="">
+          </div>
+          <div class="settings__item-text">Изменения заводских кодировочных данных (комплектация)</div>
+        </li>
+        <li class="settings__item">
+          <div class="settings__icon">
+            <img src="img/wrench-accent-icon.svg" width="24" height="24" alt="">
+          </div>
+          <div class="settings__item-text">Восстанавливать базовые кодировочные данные при необходимости</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="remote section-offset" id="remote">
+  <div class="container">
+    <div class="remote__inner">
+      <h2 class="section-title centered">REMOTE EXPERT</h2>
+      <p class="remote__subtitle section-subtitle centered">Платная удаленная экспертная поддержка</p>
+      <div class="remote__content">
+        <div class="remote__video" data-video-src="video/remote.mp4"
+        data-video-poster="" data-video-trigger data-modal-open="modal-video">
+          <div class="remote__preview">
+            <picture>
+              <source srcset="img/remote-preview.webp 1x, img/remote-preview@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/remote-preview.jpg" srcset="img/remote-preview.jpg 1x, img/remote-preview@2x.jpg 2x" width="404" height="370" alt="как это работает">
+            </picture>
+          </div>
+          <div class="remote__video-items">
+            <div class="remote__play player-icon-sm">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+            </div>
+            <button class="btn-link">как это работает</button>
+          </div>
+        </div>
+        <ul class="remote__list">
+          <li class="remote__item">Удаленное кодирование и программирование ECU</li>
+          <li class="remote__item">Удаленная диагностика сложных случаев</li>
+          <li class="remote__item">Удаленная диагностика OEM программами</li>
+          <li class="remote__item">Удаленное добавление новых ключей и замена блоков IMMO</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="complect section-offset">
+  <div class="container">
+    <div class="complect__inner">
+      <h2 class="section-title centered">97 марок в базовом комплекте</h2>
+      <p class="complect__subtitle section-subtitle centered">Работает со всеми марками представленными на рынке в том
+        числе с протоколом DoIP</p>
+      <ul class="complect__list">
+        <li class="complect__item">
+          <div class="complect__name">Европа</div>
+          <p><span>Расширенная поддержка:</span> BMW, Mercedes Benz, VAG, Land Rover</p>
+          <p>
+            EU Ford, Renault, Abarth, Alfa Romeo, Bugatti, Opel, Vauxhall, Saab, Jaguar, Mercedes Benz Sprinter,
+            Maybach, Smart,
+            Porsche, Volvo, VW, Audi, Bentley, Seat, Skoda, Lancia, Lamborghini, MINI, VW CV, Citroen, VW LT3, Dacia,
+            Rolls-Royce,
+            Fiat, Peugeot, Aston Martin, Maserati, Ferrari, Iveco LD, MAN LD, DS.</p>
+        </li>
+        <li class="complect__item">
+          <div class="complect__name">Япония и Южная Корея</div>
+          <p><span>Расширенная поддержка:</span> Hyundai, Kia, Toyota, Lexus.</p>
+          <p>Honda, Suzuki, Isuzu, Acura, Nissan, Infiniti, Scion, Mitsubishi, Subaru, Daihatsu, Mazda; Nissan GTR,
+            Fuso, HINO, UD,
+            SsangYong, Daewoo, Hyundai CV, Samsung</p>
+        </li>
+        <li class="complect__item">
+          <div class="complect__name">Китай</div>
+          <p><span>Расширенная поддержка:</span> Chery, Haval, Geely,&nbsp;Exeed.</p>
+          <p>
+            Byd, Brilliance, Great Wall, Foton, Borgward, MG, DFSK, Zotye, Emgrand, LDV, Saicmg, BAIC Motor, BAIC
+            Senova, DFFG, Jac</p>
+        </li>
+        <li class="complect__item">
+          <div class="complect__name">США</div>
+          <p>Chrysler, Jeep, GM, Dodge, Ford</p>
+        </li>
+        <li class="complect__item">
+          <div class="complect__name">СНГ</div>
+          <p>ВАЗ, ГАЗ, ИЖ, КАМАЗ, МАЗ, ПАЗ, СеАЗ,&nbsp;УАЗ,&nbsp;ЗАЗ</p>
+        </li>
+      </ul>
+      <div class="centered">
+        <a href="https://www.auteltech.com/vehicle-coverage/coverage2" target="_blank" class="btn">ТАБЛИЦЫ ПРИМЕНЯЕМОСТИ
+          АВТОСКАНЕРА</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="maxiscope section-offset" id="benefits">
+  <div class="container">
+    <div class="maxiscope__inner">
+      <h2 class="maxiscope__title section-title centered">Интегрированный автомобильный осциллограф MaxiScope MP408</h2>
+      <p class="maxiscope__subtitle section-subtitle centered">Поддержка диагностики шин CAN и LIN</p>
+      <div class="maxiscope__content">
+        <div class="maxiscope__col">
+          <div class="maxiscope__item">
+            <div class="maxiscope__value">4 СН</div>
+            <p>канала</p>
+          </div>
+          <div class="maxiscope__item">
+            <div class="maxiscope__value">20 МГц</div>
+            <p>частота на канал</p>
+          </div>
+        </div>
+        <div class="maxiscope__img">
+          <picture>
+            <source srcset="img/maxiscope.webp 1x, img/maxiscope@2x.webp 2x" type="image/webp">
+            <img loading="lazy" src="img/maxiscope.png" srcset="img/maxiscope.png 1x, img/maxiscope@2x.png 2x" width="608" height="342" alt="maxiscope">
+          </picture>
+        </div>
+        <div class="maxiscope__col">
+          <div class="maxiscope__item">
+            <div class="maxiscope__value">200 В</div>
+            <p>предел измерения</p>
+          </div>
+          <div class="maxiscope__item">
+            <div class="maxiscope__value">32 Мб</div>
+            <p>память буфера</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="report section-offset" id="report">
+  <div class="container">
+    <div class="report__inner">
+      <h2 class="section-title centered">AUTEL CLOUD REPORT</h2>
+      <p class="report__subtitle section-subtitle centered">Предавайте отчеты о диагностике клиентам и коллегам</p>
+    </div>
+  </div>
+</section>
+
+      <section class="comfort section-offset" id="comfort">
+  <div class="container">
+    <div class="comfort__inner">
+      <h2 class="section-title centered">Комфорт в работе</h2>
+      <p class="comfort__subtitle section-subtitle centered">Новые функции для удобства специалистов</p>
+      <div class="comfort__slider">
+        <ul class="comfort__list">
+          <li class="comfort__item">
+            <div class="comfort__name">Оптимизированная <br> система навигации</div>
+            <div class="comfort__img">
+              <picture>
+                <source srcset="img/functions-1.webp 1x, img/functions-1@2x.webp 2x" type="image/webp">
+                <img loading="lazy" src="img/functions-1.jpg" srcset="img/functions-1.jpg 1x, img/functions-1@2x.jpg 2x" width="344" height="214" alt="Новая улучшенная система навигации">
+              </picture>
+            </div>
+          </li>
+          <li class="comfort__item">
+            <div class="comfort__name">Функция автоматического <br> перевода на русский язык</div>
+            <div class="comfort__img">
+              <picture>
+                <source srcset="img/functions-2.webp 1x, img/functions-2@2x.webp 2x" type="image/webp">
+                <img loading="lazy" src="img/functions-2.jpg" srcset="img/functions-2.jpg 1x, img/functions-2@2x.jpg 2x" width="344" height="214" alt="Функция автоматического перевода на русский язык">
+              </picture>
+            </div>
+          </li>
+          <li class="comfort__item">
+            <div class="comfort__name">Автораспознование VIN <br> через камеру планшета</div>
+            <div class="comfort__img">
+              <picture>
+                <source srcset="img/functions-3.webp 1x, img/functions-3@2x.webp 2x" type="image/webp">
+                <img loading="lazy" src="img/functions-3.jpg" srcset="img/functions-3.jpg 1x, img/functions-3@2x.jpg 2x" width="344" height="214" alt="Автораспознование VIN через камеру планшета">
+              </picture>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination slider-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="tests section-offset">
+  <div class="container">
+    <div class="tests__inner">
+      <h2 class="section-title"><span>MaxiBAS</span> BT506 (ОПЦИЯ)</h2>
+      <p class="tests__subtitle section-subtitle">Тесты всех компонентов систем пуска ДВС и системы энергораспределения</p>
+      <ul class="tests__list">
+        <li class="tests__item">
+          <div class="tests__name">Тесты АКБ на автомобиле</div>
+          <p>Позволят быстро оценить состояние АКБ, подключённого к системе энергораспределения</p>
+          <div class="tests__preview" data-video-src="video/tests-1.mp4" data-video-trigger data-modal-open="modal-video">
+            <picture>
+              <source srcset="img/test-preview-1.webp 1x, img/test-preview-1@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/test-preview-1.jpg" srcset="img/test-preview-1.jpg 1x, img/test-preview-1@2x.jpg 2x"
+                width="339" height="196" alt="тесты">
+            </picture>
+            <div class="tests__play player-icon-sm">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+            </div>
+          </div>
+        </li>
+        <li class="tests__item">
+          <div class="tests__name">Тесты АКБ на автомобиле</div>
+          <p>Позволят быстро оценить состояние нового и б\у АКБ без подключения к автомобилю</p>
+          <div class="tests__preview"  data-video-src="video/tests-1.mp4" data-video-trigger data-modal-open="modal-video">
+            <picture>
+              <source srcset="img/test-preview-2.webp 1x, img/test-preview-2@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/test-preview-2.jpg" srcset="img/test-preview-2.jpg 1x, img/test-preview-2@2x.jpg 2x"
+                width="339" height="196" alt="тесты">
+            </picture>
+            <div class="tests__play player-icon-sm">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+            </div>
+          </div>
+        </li>
+        <li class="tests__item">
+          <div class="tests__name">Тесты систем запуска и зарядки</div>
+          <p>Позволят быстро выявить неисправности компонентов систем</p>
+          <div class="tests__preview"  data-video-src="video/tests-3.mp4" data-video-trigger data-modal-open="modal-video">
+            <picture>
+              <source srcset="img/test-preview-3.webp 1x, img/test-preview-3@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/test-preview-3.jpg" srcset="img/test-preview-3.jpg 1x, img/test-preview-3@2x.jpg 2x"
+                width="339" height="196" alt="тесты">
+            </picture>
+            <div class="tests__play player-icon-sm">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="documentation section-offset">
+  <div class="container container--sm">
+    <div class="documentation__inner">
+      <h2 class="section-title centered">Техническая <br> документация HAYNES&nbsp;PRO</h2>
+      <p class="documentation__subtitle section-subtitle centered">С интеграцией в функции диагностики</p>
+      <ul class="cards__list cards__list--big">
+        <li class="cards__item cards__item--big">
+          <div class="cards__name">Haynes PRO Electronics Full</div>
+          <ul>
+            <li>Цветные интеллектуальные электросхемы</li>
+            <li>Подробные пошаговые инструкции по проверке</li>
+            <li>Методы диагностики</li>
+            <li>Расшифровка кодов неисправностей</li>
+            <li>Схемы разъемов блоков</li>
+          </ul>
+          <div class="cards__img">
+            <picture>
+              <source srcset="img/documentation-1.webp 1x, img/documentation-1@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/documentation-1.png" srcset="img/documentation-1.png 1x, img/documentation-1@2x.png 2x" width="270" height="260" alt="haynes pro">
+            </picture>
+          </div>
+        </li>
+        <li class="cards__item cards__item--big">
+          <div class="cards__name">Haynes PRO SMART</div>
+          <ul>
+            <li>Расшифровка кодов неисправностей</li>
+            <li>База по известным неисправностям</li>
+            <li>SMARTCASE – база механических неисправностей</li>
+            <li>База TSB (Technical Service Bulletin)</li>
+            <li>Отзывные компании</li>
+          </ul>
+          <div class="cards__img">
+            <picture>
+              <source srcset="img/documentation-2.webp 1x, img/documentation-2@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/documentation-2.png" srcset="img/documentation-2.png 1x, img/documentation-2@2x.png 2x"
+                width="310" height="193" alt="haynes pro">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="chars section-offset" id="chars">
+  <div class="container">
+    <div class="chars__inner">
+      <h2 class="chars__title section-title centered">Характеристики и комплектации</h2>
+      <p class="chars__subtitle section-subtitle centered">Выбирайте то, что необходимо именно вам</p>
+      <ul class="chars__list">
+        <li class="chars__item">
+          <div class="chars__img">
+            <picture>
+              <source srcset="img/scaner-1.webp 1x, img/scaner-1@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/scaner-1.jpg" srcset="img/scaner-1.jpg 1x, img/scaner-1@2x.jpg 2x" width="285" height="174" alt="MaxiSys MS906S">
+            </picture>
+          </div>
+          <div class="chars__name">MaxiSys MS906S</div>
+          <div class="chars__buttons">
+            <button class="chars__btn btn-reset" data-modal-open="modal-complect-1">
+              <span>Комплектация</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.5" stroke="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20001 11.9994C7.20001 11.668 7.46864 11.3994 7.80001 11.3994H16.2C16.5314 11.3994 16.8 11.668 16.8 11.9994C16.8 12.3308 16.5314 12.5994 16.2 12.5994H7.80001C7.46864 12.5994 7.20001 12.3308 7.20001 11.9994Z" fill="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5757 7.37593C11.81 7.14162 12.1899 7.14162 12.4242 7.37593L16.6242 11.5759C16.8585 11.8102 16.8585 12.1901 16.6242 12.4245L12.4242 16.6245C12.1899 16.8588 11.81 16.8588 11.5757 16.6245C11.3414 16.3901 11.3414 16.0102 11.5757 15.7759L15.3514 12.0002L11.5757 8.22446C11.3414 7.99014 11.3414 7.61025 11.5757 7.37593Z" fill="#E0E4EB"/>
+</svg>
+
+            </button>
+            <button class="chars__btn btn-reset" data-modal-open="modal-chars" data-chars="1" data-name="MaxiSys MS906S">
+              <span>Характеристики</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.5" stroke="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20001 11.9994C7.20001 11.668 7.46864 11.3994 7.80001 11.3994H16.2C16.5314 11.3994 16.8 11.668 16.8 11.9994C16.8 12.3308 16.5314 12.5994 16.2 12.5994H7.80001C7.46864 12.5994 7.20001 12.3308 7.20001 11.9994Z" fill="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5757 7.37593C11.81 7.14162 12.1899 7.14162 12.4242 7.37593L16.6242 11.5759C16.8585 11.8102 16.8585 12.1901 16.6242 12.4245L12.4242 16.6245C12.1899 16.8588 11.81 16.8588 11.5757 16.6245C11.3414 16.3901 11.3414 16.0102 11.5757 15.7759L15.3514 12.0002L11.5757 8.22446C11.3414 7.99014 11.3414 7.61025 11.5757 7.37593Z" fill="#E0E4EB"/>
+</svg>
+
+            </button>
+          </div>
+        </li>
+        <li class="chars__item">
+          <div class="chars__img">
+            <picture>
+              <source srcset="img/scaner-2.webp 1x, img/scaner-2@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/scaner-2.jpg" srcset="img/scaner-2.jpg 1x, img/scaner-2@2x.jpg 2x" width="285" height="174" alt="MaxiSys MS906 Pro">
+            </picture>
+          </div>
+          <div class="chars__name">MaxiSys MS906 Pro</div>
+          <div class="chars__buttons">
+            <button class="chars__btn btn-reset" data-modal-open="modal-complect-2">
+              <span>Комплектация</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.5" stroke="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20001 11.9994C7.20001 11.668 7.46864 11.3994 7.80001 11.3994H16.2C16.5314 11.3994 16.8 11.668 16.8 11.9994C16.8 12.3308 16.5314 12.5994 16.2 12.5994H7.80001C7.46864 12.5994 7.20001 12.3308 7.20001 11.9994Z" fill="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5757 7.37593C11.81 7.14162 12.1899 7.14162 12.4242 7.37593L16.6242 11.5759C16.8585 11.8102 16.8585 12.1901 16.6242 12.4245L12.4242 16.6245C12.1899 16.8588 11.81 16.8588 11.5757 16.6245C11.3414 16.3901 11.3414 16.0102 11.5757 15.7759L15.3514 12.0002L11.5757 8.22446C11.3414 7.99014 11.3414 7.61025 11.5757 7.37593Z" fill="#E0E4EB"/>
+</svg>
+
+            </button>
+            <button class="chars__btn btn-reset" data-modal-open="modal-chars" data-chars="2" data-name="MaxiSys MS906 Pro">
+              <span>Характеристики</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.5" stroke="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20001 11.9994C7.20001 11.668 7.46864 11.3994 7.80001 11.3994H16.2C16.5314 11.3994 16.8 11.668 16.8 11.9994C16.8 12.3308 16.5314 12.5994 16.2 12.5994H7.80001C7.46864 12.5994 7.20001 12.3308 7.20001 11.9994Z" fill="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5757 7.37593C11.81 7.14162 12.1899 7.14162 12.4242 7.37593L16.6242 11.5759C16.8585 11.8102 16.8585 12.1901 16.6242 12.4245L12.4242 16.6245C12.1899 16.8588 11.81 16.8588 11.5757 16.6245C11.3414 16.3901 11.3414 16.0102 11.5757 15.7759L15.3514 12.0002L11.5757 8.22446C11.3414 7.99014 11.3414 7.61025 11.5757 7.37593Z" fill="#E0E4EB"/>
+</svg>
+
+            </button>
+          </div>
+        </li>
+        <li class="chars__item">
+          <div class="chars__img">
+            <picture>
+              <source srcset="img/scaner-3.webp 1x, img/scaner-3@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/scaner-3.jpg" srcset="img/scaner-3.jpg 1x, img/scaner-3@2x.jpg 2x" width="285" height="174" alt="MaxiSys MS906 Pro MAX">
+            </picture>
+          </div>
+          <div class="chars__name">MaxiSys MS906 Pro MAX</div>
+          <div class="chars__buttons">
+            <button class="chars__btn btn-reset" data-modal-open="modal-complect-3">
+              <span>Комплектация</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.5" stroke="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20001 11.9994C7.20001 11.668 7.46864 11.3994 7.80001 11.3994H16.2C16.5314 11.3994 16.8 11.668 16.8 11.9994C16.8 12.3308 16.5314 12.5994 16.2 12.5994H7.80001C7.46864 12.5994 7.20001 12.3308 7.20001 11.9994Z" fill="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5757 7.37593C11.81 7.14162 12.1899 7.14162 12.4242 7.37593L16.6242 11.5759C16.8585 11.8102 16.8585 12.1901 16.6242 12.4245L12.4242 16.6245C12.1899 16.8588 11.81 16.8588 11.5757 16.6245C11.3414 16.3901 11.3414 16.0102 11.5757 15.7759L15.3514 12.0002L11.5757 8.22446C11.3414 7.99014 11.3414 7.61025 11.5757 7.37593Z" fill="#E0E4EB"/>
+</svg>
+
+            </button>
+            <button class="chars__btn btn-reset" data-modal-open="modal-chars" data-chars="3" data-name="MaxiSys MS906 Pro MAX">
+              <span>Характеристики</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.5" stroke="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20001 11.9994C7.20001 11.668 7.46864 11.3994 7.80001 11.3994H16.2C16.5314 11.3994 16.8 11.668 16.8 11.9994C16.8 12.3308 16.5314 12.5994 16.2 12.5994H7.80001C7.46864 12.5994 7.20001 12.3308 7.20001 11.9994Z" fill="#E0E4EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5757 7.37593C11.81 7.14162 12.1899 7.14162 12.4242 7.37593L16.6242 11.5759C16.8585 11.8102 16.8585 12.1901 16.6242 12.4245L12.4242 16.6245C12.1899 16.8588 11.81 16.8588 11.5757 16.6245C11.3414 16.3901 11.3414 16.0102 11.5757 15.7759L15.3514 12.0002L11.5757 8.22446C11.3414 7.99014 11.3414 7.61025 11.5757 7.37593Z" fill="#E0E4EB"/>
+</svg>
+
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+      <section class="study section-offset" id="study">
+  <div class="container">
+    <div class="study__inner">
+      <h2 class="section-title centered">Обучение в лаборатории BRAINSTORM</h2>
+      <p class="study__subtitle section-subtitle centered">Поможем разобраться с функциями прибора</p>
+      <div class="study__content">
+        <div class="study__img">
+          <picture>
+            <source srcset="img/study.webp 1x, img/study@2x.webp 2x" type="image/webp">
+            <img loading="lazy" src="img/study.jpg" srcset="img/study.jpg 1x, img/study@2x.jpg 2x" width="852"
+              height="567" alt="Обучение в лаборатории BRAINSTORM">
+          </picture>
+        </div>
+        <ul class="study__items">
+          <li class="study__item">
+            <div class="study__item-inner">
+              <div class="study__name"><span>2</span> модуля</div>
+              <p>Практических занятий на&nbsp;реальном автомобиле</p>
+            </div>
+          </li>
+          <li class="study__item">
+            <div class="study__item-inner">
+              <div class="study__name"><span>16</span> часов тренинга</div>
+              <p>с техническим экспертом BRAINSTORM</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="garanty section-offset" id="garanty">
+  <div class="container">
+    <div class="garanty__inner">
+      <h2 class="section-title centered">ПОДДЕРЖКА И ГАРАНТИЯ</h2>
+      <p class="garanty__subtitle section-subtitle centered">Техническая, гарантийная и постгарантийная поддержка</p>
+      <ul class="garanty__list">
+        <li class="garanty__item">
+          <div class="garanty__img">
+            <picture>
+              <source srcset="img/support-1.webp 1x, img/support-1@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/support-1.jpg" srcset="img/support-1.jpg 1x, img/support-1@2x.jpg 2x" width="232" height="164" alt="Гарантия">
+            </picture>
+          </div>
+          <div class="garanty__name">Европейская гарантия</div>
+          <p>2 года гарантии <br> от AUTEL EUROPE</p>
+        </li>
+        <li class="garanty__item">
+          <div class="garanty__img">
+            <picture>
+              <source srcset="img/support-2.webp 1x, img/support-2@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/support-2.jpg" srcset="img/support-2.jpg 1x, img/support-2@2x.jpg 2x" width="232" height="164" alt="Удаленная диагностика">
+            </picture>
+          </div>
+          <div class="garanty__name">Удаленная диагностика</div>
+          <p>Проверим удалено через TeamViewer систему в случае сбоев</p>
+        </li>
+        <li class="garanty__item">
+          <div class="garanty__img">
+            <picture>
+              <source srcset="img/support-3.webp 1x, img/support-3@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/support-2.jpg" srcset="img/support-3.jpg 1x, img/support-3@2x.jpg 2x" width="232" height="164" alt="Сервисные центры">
+            </picture>
+          </div>
+          <div class="garanty__name">Сервисные центры</div>
+          <p>11 сервисных центров в СНГ готовы оперативно оказать поддержку</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="trust section-offset">
+  <div class="container container--lg">
+    <div class="trust__inner">
+      <div class="trust__info">
+        <h2 class="section-title">Доверие автомобильного сообщества</h2>
+        <p class="section-subtitle">Награды и премии</p>
+      </div>
+      <ul class="trust__items">
+        <li class="trust__item">
+          <div class="trust__img">
+            <picture>
+              <source srcset="img/trust-1.webp 1x, img/trust-1@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/trust-1.png" srcset="img/trust-1.png 1x, img/trust-1@2x.png 2x" width="106" height="148" alt="reddot">
+            </picture>
+          </div>
+          <div class="trust__name">Международная премия <br> I PRODUCT DESIGN AWARD</div>
+        </li>
+        <li class="trust__item">
+          <div class="trust__img">
+            <picture>
+              <source srcset="img/trust-2.webp 1x, img/trust-2@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/trust-2.png" srcset="img/trust-2.png 1x, img/trust-2@2x.png 2x" width="242" height="298" alt="Золотой ключ 2018">
+            </picture>
+          </div>
+          <div class="trust__name">Золотой ключ 2018</div>
+        </li>
+        <li class="trust__item">
+          <div class="trust__img">
+            <picture>
+              <source srcset="img/trust-3.webp 1x, img/trust-3@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/trust-3.png" srcset="img/trust-3.png 1x, img/trust-3@2x.png 2x" width="242" height="298" alt="Золотой ключ 2021">
+            </picture>
+          </div>
+          <div class="trust__name">Золотой ключ 2021</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="video section-offset">
+  <div class="video__container container container--lg" style="background-image: url('img/video-preview-2.jpg');">
+    <div class="video__inner">
+      <button class="btn-reset player-icon video__play" data-video-src="video/autel.mp4" data-video-trigger data-modal-open="modal-video">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 6.7999C12.71 6.7999 6.80015 12.7097 6.80015 19.9999C6.80015 27.2901 12.71 33.1999 20.0001 33.1999C27.2903 33.1999 33.2001 27.2901 33.2001 19.9999C33.2001 12.7097 27.2903 6.7999 20.0001 6.7999ZM4.40015 19.9999C4.40015 11.3843 11.3845 4.3999 20.0001 4.3999C28.6158 4.3999 35.6001 11.3843 35.6001 19.9999C35.6001 28.6155 28.6158 35.5999 20.0001 35.5999C11.3845 35.5999 4.40015 28.6155 4.40015 19.9999Z" fill="#D2232A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0339 14.142C17.4241 13.9332 17.8976 13.9561 18.2658 14.2015L25.4658 19.0015C25.7996 19.2241 26.0001 19.5988 26.0001 20C26.0001 20.4012 25.7996 20.7759 25.4658 20.9985L18.2658 25.7985C17.8976 26.0439 17.4241 26.0668 17.0339 25.858C16.6437 25.6492 16.4001 25.2426 16.4001 24.8V15.2C16.4001 14.7574 16.6437 14.3508 17.0339 14.142ZM18.8001 17.4422V22.5578L22.6368 20L18.8001 17.4422Z" fill="#D2232A"/>
+</svg>
+
+      </button>
+      <h2 class="video__title section-title centered">Инновации Autel</h2>
+      <p class="video__subtitle section-subtitle centered">Будущее автомобильной диагностики</p>
+    </div>
+  </div>
+</section>
+
+      <section class="partners section-offset" id="partners">
+  <div class="container container--lg">
+    <div class="partners__inner">
+      <h2 class="partners__title section-title">Наши партнеры</h2>
+      <p class="partners__subtitle section-subtitle">Выбирайте представителя в вашем регионе</p>
+      <div class="partners__content" data-tabs-container>
+        <ul class="partners__tabs">
+          <li><a class="is-active" href="#" data-tabs-trigger data-tabs="0">Страны СНГ</a></li>
+          <li><a href="#" data-tabs-trigger data-tabs="1">Казахстан</a></li>
+          <li><a href="#" data-tabs-trigger data-tabs="2">Беларусь</a></li>
+          <li><a href="#" data-tabs-trigger data-tabs="3">Киргизия</a></li>
+          <li><a href="#" data-tabs-trigger data-tabs="4">Азербайджан</a></li>
+          <li><a href="#" data-tabs-trigger data-tabs="5">Узбекистан</a></li>
+          <li><a href="#" data-tabs-trigger data-tabs="6">Армения</a></li>
+        </ul>
+        <div class="partners__tabs-content">
+          <div class="partners__tabs-item is-active" data-show-more-parent data-tabs-content data-tabs="0">
+            <ul class="partners__items">
+  <li class="partners__item">
+    <div class="partners__name">СІллан</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+77015221582">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+7 701 522-15-82</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@sillan.kz">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>info@sillan.kz</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="http://sillan.kz" target="_blank">Перейти на сайт</a>
+  </li>
+  <li class="partners__item">
+    <div class="partners__name">ДЮКОН (Pit-Stop)</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+375293050778">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+3 752 930-507-78</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@dukon.by">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>info@dukon.by</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="http://dukon.by/" target="_blank">Перейти на сайт</a>
+  </li>
+  <li class="partners__item">
+    <div class="partners__name">СМАРТКЕЙ</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+996553931111">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+9 965 539-311-11</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@max.kg">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>info@max.kg</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="http://max.kg/" target="_blank">Перейти на сайт</a>
+  </li>
+  <li class="partners__item">
+    <div class="partners__name">EUROTECHNO STANDARD MMC</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+994558604873">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+9 945 586-048-73</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:aziatehnoholding@bk.ru">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>aziatehnoholding@bk.ru</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="https://autel.az/" target="_blank">Перейти на сайт</a>
+  </li>
+  <li class="partners__item">
+    <div class="partners__name">TYRE UNIVERSAL SERVICE</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+998712815940">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+9 987 128-159-40</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@tus.uz">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>info@tus.uz</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="http://tus.uz/" target="_blank">Перейти на сайт</a>
+  </li>
+  <li class="partners__item">
+    <div class="partners__name">JSPRO</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+998906002800">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+9 989 060-028-00</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:adamkarim@mail.ru">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>adamkarim@mail.ru</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="https://t.me/JsproUz" target="_blank">Перейти на сайт</a>
+  </li>
+  <li class="partners__item">
+    <div class="partners__name">AUTO HOUSE</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+37455599799">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+3 745 559-97-99</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:mish799@yandex.com">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>mish799@yandex.com</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="http://auto-house.am/" target="_blank">Перейти на сайт</a>
+  </li>
+  <li class="partners__item">
+    <div class="partners__name">OBD AM</div>
+    <ul class="partners__contacts">
+      <li>
+        <a href="tel:+37441100400">
+          <div class="partners__contacts-icon">
+            <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+          </div>
+          <span>+3 744 110-04-00</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@obd.am">
+          <div class="partners__contacts-icon">
+            <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+          </div>
+          <span>info@obd.am</span>
+        </a>
+      </li>
+    </ul>
+    <a class="partners__btn" href="http://obd.am/" target="_blank">Перейти на сайт</a>
+  </li>
+</ul>
+
+            <div class="centered">
+              <button class="btn-link" data-show-more data-more="Смотреть больше" data-less="Смотреть меньше">Смотреть больше</button>
+            </div>
+          </div>
+          <div class="partners__tabs-item" data-show-more-parent data-tabs-content data-tabs="1">
+            <ul class="partners__items">
+              <li class="partners__item">
+                <div class="partners__name">СІллан</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+77015221582">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+7 701 522-15-82</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@sillan.kz">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>info@sillan.kz</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="http://sillan.kz" target="_blank">Перейти на сайт</a>
+              </li>
+            </ul>
+          </div>
+          <div class="partners__tabs-item" data-show-more-parent data-tabs-content data-tabs="2">
+            <ul class="partners__items">
+              <li class="partners__item">
+                <div class="partners__name">ДЮКОН (Pit-Stop)</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+375293050778">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+3 752 930-507-78</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@dukon.by">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>info@dukon.by</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="http://dukon.by/" target="_blank">Перейти на сайт</a>
+              </li>
+            </ul>
+          </div>
+          <div class="partners__tabs-item" data-show-more-parent data-tabs-content data-tabs="3">
+            <ul class="partners__items">
+              <li class="partners__item">
+                <div class="partners__name">СМАРТКЕЙ</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+996553931111">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+9 965 539-311-11</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@max.kg">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>info@max.kg</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="http://max.kg/" target="_blank">Перейти на сайт</a>
+              </li>
+            </ul>
+          </div>
+          <div class="partners__tabs-item" data-show-more-parent data-tabs-content data-tabs="4">
+            <ul class="partners__items">
+              <li class="partners__item">
+                <div class="partners__name">EUROTECHNO STANDARD MMC</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+994558604873">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+9 945 586-048-73</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:aziatehnoholding@bk.ru">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>aziatehnoholding@bk.ru</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="https://autel.az/" target="_blank">Перейти на сайт</a>
+              </li>
+            </ul>
+          </div>
+          <div class="partners__tabs-item" data-show-more-parent data-tabs-content data-tabs="5">
+            <ul class="partners__items">
+              <li class="partners__item">
+                <div class="partners__name">TYRE UNIVERSAL SERVICE</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+998712815940">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+9 987 128-159-40</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@tus.uz">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>info@tus.uz</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="http://tus.uz/" target="_blank">Перейти на сайт</a>
+              </li>
+              <li class="partners__item">
+                <div class="partners__name">JSPRO</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+998906002800">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+9 989 060-028-00</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:adamkarim@mail.ru">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>adamkarim@mail.ru</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="https://t.me/JsproUz" target="_blank">Перейти на сайт</a>
+              </li>
+            </ul>
+          </div>
+          <div class="partners__tabs-item" data-show-more-parent data-tabs-content data-tabs="6">
+            <ul class="partners__items">
+              <li class="partners__item">
+                <div class="partners__name">AUTO HOUSE</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+37455599799">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+3 745 559-97-99</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:mish799@yandex.com">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>mish799@yandex.com</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="http://auto-house.am/" target="_blank">Перейти на сайт</a>
+              </li>
+              <li class="partners__item">
+                <div class="partners__name">OBD AM</div>
+                <ul class="partners__contacts">
+                  <li>
+                    <a href="tel:+37441100400">
+                      <div class="partners__contacts-icon">
+                        <img src="img/phone-icon.svg" width="13" height="13" alt="phone" />
+                      </div>
+                      <span>+3 744 110-04-00</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@obd.am">
+                      <div class="partners__contacts-icon">
+                        <img src="img/email-icon.svg" width="13" height="13" alt="email" />
+                      </div>
+                      <span>info@obd.am</span>
+                    </a>
+                  </li>
+                </ul>
+                <a class="partners__btn" href="http://obd.am/" target="_blank">Перейти на сайт</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container container--lg">
+    <div class="footer__inner">
+      <div class="footer__logo-wrapper footer__col">
+        <div class="footer__logo">
+          <img src="img/logo-footer.svg" width="166" height="26" alt="footer-logo">
+        </div>
+        <div class="footer__address">ул. Красноткацкая, 90, 35, Киев, 02000</div>
+      </div>
+      <ul class="footer__list footer__col">
+        <li><a href="#compare" data-scroll>Сравнение</a></li>
+        <li><a href="#examples" data-scroll>Функции</a></li>
+        <li><a href="#remote" data-scroll>Remote Expert</a></li>
+      </ul>
+      <ul class="footer__list footer__col">
+        <li><a href="#study" data-scroll>Обучение</a></li>
+        <li><a href="#partners" data-scroll>Партнеры</a></li>
+      </ul>
+      <ul class="footer__list footer__col">
+        <li><a href="tel:+380503795456">+38 050 379 54 56</a></li>
+        <li><a href="mailto:info@autel-ukraine.com.ua">info@autel-ukraine.com.ua</a></li>
+      </ul>
+      
+    </div>
+    <div class="footer__bottom">
+      <p>Autel-Ukraine Copyright © 2022</p>
+      <a href="#" target="_blank">Договор оферты</a>
+      <a href="#" target="_blank">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+    <div class="modal modal-complect" id="modal-complect-1" aria-hidden="true">
+  <div class="modal__wrapper">
+    <div class="modal__scroll-wrapper" data-simplebar>
+      <div class="modal__inner">
+        <div class="modal__content">
+          <h2 class="modal-complect__title section-title centered">комплектация <span>MaxiSys</span> MS906S</h2>
+          <div class="modal-complect__inner" data-show-more-parent>
+            <ul class="modal-complect__list">
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-55.webp 1x, img/complect-55@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-55.png" srcset="img/complect-55.png 1x, img/complect-55@2x.png 2x"
+                        width="134" height="94" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Диагностический сканер Autel MaxiSys MS906S</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-25.webp 1x, img/complect-25@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-25.png" srcset="img/complect-25.png 1x, img/complect-25@2x.png 2x"
+                        width="114" height="102" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер диагностический MiniVCI mini с удлинителем</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-26.webp 1x, img/complect-26@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-26.png" srcset="img/complect-26.png 1x, img/complect-26@2x.png 2x"
+                        width="117" height="110" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Benz-14</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-27.webp 1x, img/complect-27@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-27.png" srcset="img/complect-27.png 1x, img/complect-27@2x.png 2x"
+                        width="147" height="85" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Benz-38</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-28.webp 1x, img/complect-28@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-28.png" srcset="img/complect-28.png 1x, img/complect-28@2x.png 2x"
+                        width="134" height="113" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер BMW-20</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-29.webp 1x, img/complect-29@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-29.png" srcset="img/complect-29.png 1x, img/complect-29@2x.png 2x"
+                        width="131" height="95" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Kia-20</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-30.webp 1x, img/complect-30@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-30.png" srcset="img/complect-30.png 1x, img/complect-30@2x.png 2x"
+                        width="131" height="95" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Mitsubishi/ Hyundai-12+16</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-31.webp 1x, img/complect-31@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-31.png" srcset="img/complect-31.png 1x, img/complect-31@2x.png 2x"
+                        width="131" height="95" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Nissan-14</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-32.webp 1x, img/complect-32@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-32.png" srcset="img/complect-32.png 1x, img/complect-32@2x.png 2x"
+                        width="114" height="99" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Honda-3</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-33.webp 1x, img/complect-33@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-33.png" srcset="img/complect-33.png 1x, img/complect-33@2x.png 2x"
+                        width="113" height="99" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Fiat-3</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-34.webp 1x, img/complect-34@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-34.png" srcset="img/complect-34.png 1x, img/complect-34@2x.png 2x"
+                        width="114" height="109" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер GM/ <br> Daewoo-12</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-35.webp 1x, img/complect-35@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-35.png" srcset="img/complect-35.png 1x, img/complect-35@2x.png 2x"
+                        width="123" height="93" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер PSA-2</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-36.webp 1x, img/complect-36@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-36.png" srcset="img/complect-36.png 1x, img/complect-36@2x.png 2x"
+                        width="114" height="103" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер VW/Audi-2+2</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-37.webp 1x, img/complect-37@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-37.png" srcset="img/complect-37.png 1x, img/complect-37@2x.png 2x"
+                        width="140" height="113" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер внешнего <br> питания</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-38.webp 1x, img/complect-38@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-38.png" srcset="img/complect-38.png 1x, img/complect-38@2x.png 2x"
+                        width="149" height="86" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Кабель питания от прикуривателя</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-39.webp 1x, img/complect-39@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-39.png" srcset="img/complect-39.png 1x, img/complect-39@2x.png 2x"
+                        width="128" height="87" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Кабель Mini USB</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">2 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-8.webp 1x, img/complect-8@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-8.png" srcset="img/complect-8.png 1x, img/complect-8@2x.png 2x" width="114"
+                        height="75" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Предохранители плавкие</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-41.webp 1x, img/complect-41@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-41.png" srcset="img/complect-41.png 1x, img/complect-41@2x.png 2x"
+                        width="148" height="87" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Ткань для экрана</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-42.webp 1x, img/complect-42@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-42.png" srcset="img/complect-42.png 1x, img/complect-42@2x.png 2x"
+                        width="138" height="80" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Шнурок для ношения адаптера MaxiVCI mini</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-5.webp 1x, img/complect-5@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-5.png" srcset="img/complect-5.png 1x, img/complect-5@2x.png 2x"
+                        width="171" height="118" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Кейс для хранения</div>
+                </div>
+              </li>
+            </ul>
+            <div class="modal-complect__btn centered">
+              <button class="btn-link" data-show-more>Смотреть всё</button>
+            </div>
+          </div>
+          <button class="modal__close" data-modal-close><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.8437 0.84375L0.84375 21.8437M0.84375 0.84375L21.8437 21.8437" stroke="#E0E4EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-complect" id="modal-complect-2" aria-hidden="true">
+  <div class="modal__wrapper">
+    <div class="modal__scroll-wrapper" data-simplebar>
+      <div class="modal__inner">
+        <div class="modal__content">
+          <h2 class="modal-complect__title section-title centered">комплектация <span>MaxiSys</span> MS906 Pro</h2>
+          <div class="modal-complect__inner" data-show-more-parent>
+            <ul class="modal-complect__list">
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-3.webp 1x, img/complect-3@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-3.png"
+                        srcset="img/complect-3.png 1x, img/complect-3@2x.png 2x" width="170" height="110" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Диагностический сканер Autel MaxiSys MS906 Pro</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-4.webp 1x, img/complect-4@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-4.png"
+                        srcset="img/complect-4.png 1x, img/complect-4@2x.png 2x" width="105" height="123" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Беспроводной адаптер MaxiVCI V200</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-43.webp 1x, img/complect-43@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-43.png"
+                        srcset="img/complect-43.png 1x, img/complect-43@2x.png 2x" width="124" height="91" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Ethernet- <br> USB</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-44.webp 1x, img/complect-44@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-44.png"
+                        srcset="img/complect-44.png 1x, img/complect-44@2x.png 2x" width="133" height="83" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Кабель USB Type C</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-45.webp 1x, img/complect-45@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-45.png"
+                        srcset="img/complect-45.png 1x, img/complect-45@2x.png 2x" width="120" height="73" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер внешнего <br> питания</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">2 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-8.webp 1x, img/complect-8@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-8.png" srcset="img/complect-8.png 1x, img/complect-8@2x.png 2x" width="114"
+                        height="75" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Предохранители <br> плавкие</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-41.webp 1x, img/complect-41@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-41.png"
+                        srcset="img/complect-41.png 1x, img/complect-41@2x.png 2x" width="148" height="87" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Ткань для <br> очистки экрана</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-5.webp 1x, img/complect-5@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-5.png" srcset="img/complect-5.png 1x, img/complect-5@2x.png 2x"
+                        width="171" height="118" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Кейс для хранения</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="modal__close" data-modal-close><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.8437 0.84375L0.84375 21.8437M0.84375 0.84375L21.8437 21.8437" stroke="#E0E4EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-complect" id="modal-complect-3" aria-hidden="true">
+  <div class="modal__wrapper">
+    <div class="modal__scroll-wrapper" data-simplebar>
+      <div class="modal__inner">
+        <div class="modal__content">
+          <h2 class="modal-complect__title section-title centered">комплектация <span>MaxiSys</span> MS906 Pro Max</h2>
+          <div class="modal-complect__inner" data-show-more-parent>
+            <ul class="modal-complect__list">
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-3.webp 1x, img/complect-3@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-3.png"
+                        srcset="img/complect-3.png 1x, img/complect-3@2x.png 2x" width="135" height="97" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Диагностический сканер Autel MaxiSys MS906 Pro</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-4.webp 1x, img/complect-4@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-4.png"
+                        srcset="img/complect-4.png 1x, img/complect-4@2x.png 2x" width="100" height="100" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Беспроводной адаптер MaxiVCI V200</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-46.webp 1x, img/complect-46@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-46.png"
+                        srcset="img/complect-46.png 1x, img/complect-46@2x.png 2x" width="82" height="108" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Осциллограф <br> MaxiScope MP408</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">4 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-47.webp 1x, img/complect-47@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-47.png"
+                        srcset="img/complect-47.png 1x, img/complect-47@2x.png 2x" width="154" height="81" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Экранированный <br> измерительный провод</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-48.webp 1x, img/complect-48@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-48.png"
+                        srcset="img/complect-48.png 1x, img/complect-48@2x.png 2x" width="164" height="64" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер для вторичной цепи зажигания</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-49.webp 1x, img/complect-49@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-49.png"
+                        srcset="img/complect-49.png 1x, img/complect-49@2x.png 2x" width="162" height="59" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Двухпроводный отвод</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-50.webp 1x, img/complect-50@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-50.png"
+                        srcset="img/complect-50.png 1x, img/complect-50@2x.png 2x" width="173" height="68" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Провод с малыми крокодилами</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-51.webp 1x, img/complect-51@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-51.png"
+                        srcset="img/complect-51.png 1x, img/complect-51@2x.png 2x" width="137" height="80" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Набор из 2-х щупов мультиметра</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">2 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-52.webp 1x, img/complect-52@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-52.png"
+                        srcset="img/complect-52.png 1x, img/complect-52@2x.png 2x" width="132" height="96" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Аттенюаторы 20:1</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-53.webp 1x, img/complect-53@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-53.png"
+                        srcset="img/complect-53.png 1x, img/complect-53@2x.png 2x" width="76" height="95" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Набор зажимов типа <br> “крокодил” (малые)</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-53.webp 1x, img/complect-53@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-53.png"
+                        srcset="img/complect-53.png 1x, img/complect-53@2x.png 2x" width="88" height="108" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Набор зажимов типа <br> “крокодил” (большие)</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-54.webp 1x, img/complect-54@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-54.png"
+                        srcset="img/complect-54.png 1x, img/complect-54@2x.png 2x" width="155" height="87" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Набор из 5-ти игольчатых пробников</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-43.webp 1x, img/complect-43@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-43.png"
+                        srcset="img/complect-43.png 1x, img/complect-43@2x.png 2x" width="124" height="91" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер Ethernet- <br> USB</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-45.webp 1x, img/complect-45@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-45.png"
+                        srcset="img/complect-45.png 1x, img/complect-45@2x.png 2x" width="120" height="73" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Адаптер внешнего <br> питания</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-44.webp 1x, img/complect-44@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-44.png"
+                        srcset="img/complect-44.png 1x, img/complect-44@2x.png 2x" width="133" height="83" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Кабель USB Type C</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">2 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-8.webp 1x, img/complect-8@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-8.png"
+                        srcset="img/complect-8.png 1x, img/complect-8@2x.png 2x" width="114" height="75" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Предохранители <br> плавкие</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-41.webp 1x, img/complect-41@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-41.png"
+                        srcset="img/complect-41.png 1x, img/complect-41@2x.png 2x" width="148" height="87" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Ткань <br> для очистки экрана</div>
+                </div>
+              </li>
+              <li class="modal-complect__item">
+                <div class="modal-complect__item-inner">
+                  <div class="modal-complect__count">1 шт.</div>
+                  <div class="modal-complect__img">
+                    <picture>
+                      <source srcset="img/complect-5.webp 1x, img/complect-5@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/complect-5.png"
+                        srcset="img/complect-5.png 1x, img/complect-5@2x.png 2x" width="171" height="118" alt="">
+                    </picture>
+                  </div>
+                  <div class="modal-complect__name">Кейс для хранения</div>
+                </div>
+              </li>
+
+            </ul>
+            <div class="modal-complect__btn centered">
+              <button class="btn-link" data-show-more>Смотреть всё</button>
+            </div>
+          </div>
+          <button class="modal__close" data-modal-close><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.8437 0.84375L0.84375 21.8437M0.84375 0.84375L21.8437 21.8437" stroke="#E0E4EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-chars" id="modal-chars" aria-hidden="true">
+  <div class="modal__wrapper">
+    <div class="modal__scroll-wrapper" data-simplebar>
+      <div class="modal__inner">
+        <div class="modal__content">
+          <h2 class="modal-chars__title section-title centered">характеристики <span>MaxiSys</span> MS906S</h2>
+          <div class="modal__table modal-table">
+            <table>
+              <thead>
+                <tr>
+                  <td class="modal-table__title">Сравнительная таблица приборов MaxiSys</td>
+                  <td class="modal-table__td-1">
+                    <picture>
+                      <source srcset="img/product-1.webp 1x, img/product-1@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/product-1.jpg" srcset="img/product-1.jpg 1x, img/product-1@2x.jpg 2x"
+                        width="182" height="111" alt="">
+                    </picture>
+                  </td>
+                  <td class="modal-table__td-2">
+                    <picture>
+                      <source srcset="img/product-2.webp 1x, img/product-2@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/product-2.jpg" srcset="img/product-2.jpg 1x, img/product-2@2x.jpg 2x"
+                        width="182" height="111" alt="">
+                    </picture>
+                  </td>
+                  <td class="modal-table__td-3">
+                    <picture>
+                      <source srcset="img/product-3.webp 1x, img/product-3@2x.webp 2x" type="image/webp">
+                      <img loading="lazy" src="img/product-3.jpg" srcset="img/product-3.jpg 1x, img/product-3@2x.jpg 2x"
+                        width="182" height="111" alt="">
+                    </picture>
+                  </td>
+                  <td class="section-title modal-table__title-mob">Характеристики MaxiSys</td>
+                </tr>
+                <tr>
+                  <td class="modal-table__subtitle">Maxisys</td>
+                  <td class="modal-table__subtitle">MS906S</td>
+                  <td class="modal-table__subtitle">MS906 Pro</td>
+                  <td class="modal-table__subtitle">MS906 Pro MAX</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="modal-table__spoiler">
+                  <td colspan="4">
+                    Диагностические функции
+                    <img src="img/arrow-down-red-icon.svg" width="16" height="16" alt="toggle">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Типы поддерживаемых систем и транспортных&nbsp;средств</td>
+                  <td class="modal-table__item-sm" colspan="3">Легковые / Легкий коммерческий транспорт /
+                    Среднетоннажные грузовики (несколько производителей)
+                  </td>
+                </tr>
+                <tr>
+                  <td>Кол-во поддерживаемых марок</td>
+                  <td class="modal-table__td-1">86</td>
+                  <td class="modal-table__td-2">94</td>
+                  <td class="modal-table__td-3">94</td>
+                </tr>
+                <tr>
+                  <td>Адаптеры OBD-I, шт.</td>
+                  <td class="modal-table__td-1">11</td>
+                  <td class="modal-table__td-2">11 (Опция)</td>
+                  <td class="modal-table__td-3">11 (Опция)</td>
+                </tr>
+                <tr>
+                  <td>Функции базовой диагностики систем (ошибки, параметры, активации, тест-блоки, адаптиации)</td>
+                  <td class="modal-table__td-1">•</td>
+                  <td class="modal-table__td-2">•</td>
+                  <td class="modal-table__td-3">•</td>
+                </tr>
+                <tr>
+                  <td>Сервисные функции</td>
+                  <td class="modal-table__td-1">26</td>
+                  <td class="modal-table__td-2">26</td>
+                  <td class="modal-table__td-3">26</td>
+                </tr>
+                <tr>
+                  <td>Функции активации исполнительных механизмов</td>
+                  <td class="modal-table__item-sm modal-table__td-1">BI-DIRECTIONAL CONTROL</td>
+                  <td class="modal-table__item-sm modal-table__td-2">BI-DIRECTIONAL CONTROL</td>
+                  <td class="modal-table__item-sm modal-table__td-3">BI-DIRECTIONAL CONTROL</td>
+                </tr>
+                <tr>
+                  <td>Функции offline кодирования ECU и настройки авто под клиента</td>
+                  <td class="modal-table__td-1">X</td>
+                  <td class="modal-table__td-2">•</td>
+                  <td class="modal-table__td-3">•</td>
+                </tr>
+                <tr>
+                  <td>Функции осциллографа</td>
+                  <td class="modal-table__td-1">• (Опция)</td>
+                  <td class="modal-table__td-2">• (Опция)</td>
+                  <td class="modal-table__td-3">•</td>
+                </tr>
+                <tr>
+                  <td>Функции видеоэндоскопа</td>
+                  <td class="modal-table__td-1">• (Опция)</td>
+                  <td class="modal-table__td-2">• (Опция)</td>
+                  <td class="modal-table__td-3">• (Опция)</td>
+                </tr>
+                <tr>
+                  <td>Функции тестера АКБ</td>
+                  <td class="modal-table__td-1">• (Опция)</td>
+                  <td class="modal-table__td-2">• (Опция)</td>
+                  <td class="modal-table__td-2">• (Опция)</td>
+                </tr>
+                <tr>
+                  <td>Функции ADAS</td>
+                  <td class="modal-table__td-1">X</td>
+                  <td class="modal-table__td-2">• (Опция)</td>
+                  <td class="modal-table__td-3">• (Опция)</td>
+                </tr>
+                <tr>
+                  <td>Автоматическое определение марки и модели</td>
+                  <td class="modal-table__td-1">AUTO-VIN</td>
+                  <td class="modal-table__td-2">AUTO-VIN / AUTO-SCAN</td>
+                  <td class="modal-table__td-3">AUTO-VIN / AUTO-SCAN</td>
+                </tr>
+                <tr>
+                  <td>Функции REMOTE EXPERT</td>
+                  <td class="modal-table__td-1">X</td>
+                  <td class="modal-table__td-2">•</td>
+                  <td class="modal-table__td-3">•</td>
+                </tr>
+                <tr class="modal-table__spoiler">
+                  <td colspan="4">
+                    Информация по ремонту и обслуживанию автомобилей
+                    <img src="img/arrow-down-red-icon.svg" width="16" height="16" alt="toggle">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Документация Haynes Pro</td>
+                  <td colspan="3">Haynes Pro Electronics Full / опция <br> Haynes PRO Smart / опция <br> Haynes Pro Tech Full /
+                    опция</td>
+                </tr>
+                <tr>
+                  <td>Обновление функций диагностики</td>
+                  <td class="modal-table__td-1">2 года бесплатно</td>
+                  <td class="modal-table__td-2">2 года бесплатно</td>
+                  <td class="modal-table__td-3">2 года бесплатно</td>
+                </tr>
+                <tr class="modal-table__spoiler">
+                  <td colspan="4">
+                    Технические характеристики VCI
+                    <img src="img/arrow-down-red-icon.svg" width="16" height="16" alt="toggle">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Диагностческий интерфейс VCI</td>
+                  <td class="modal-table__td-1">MaxiVCI Mini</td>
+                  <td class="modal-table__td-2">MaxiVCI 200</td>
+                  <td class="modal-table__td-3">MaxiVCI 200</td>
+                </tr>
+                <tr>
+                  <td class="modal-table__item-top">Поддержка протоколов передачи данных</td>
+                  <td class="modal-table__item-sm modal-table__td-1">ISO9141-2, ISO14230-2, ISO15765, K/L-Line, Flashing
+                    Code, SAE-J1850
+                    VPW, SAE-J1850PWM, ISO11898 (Highspeed, Middlespeed,
+                    Lowspeed and Singlewire CAN, fault-tolerant CAN), SAE J2610, GM UART, UART Echo Byte Protocol, Honda
+                    Diag-H Protocol,
+                    TP2.0, TP1.6</td>
+                  <td class="modal-table__item-sm modal-table__td-2">DoIP, CAN-FD, ISO 9142-2, ISO 14230-2, ISO 15765-4,
+                    K-Line, L-Line,
+                    Flashing Code, SAE-J1850 VPW, SAE-J1850 PWM, CAN ISO
+                    11898, High speed, Middle speed, Low speed и Single wire CAN, GM UART, UART Echo Byte, Honda Diag-H,
+                    TP 2.0, TP 1.6,
+                    SAE
+                    J1939, SAE J1708, Fault-Tolerant CAN</td>
+                  <td class="modal-table__item-sm modal-table__td-3">DoIP, CAN-FD, ISO 9142-2, ISO 14230-2, ISO 15765-4,
+                    K-Line, L-Line,
+                    Flashing Code, SAE-J1850 VPW, SAE-J1850 PWM, CAN ISO
+                    11898, High speed, Middle speed, Low speed и Single wire CAN, GM UART, UART Echo Byte, Honda Diag-H,
+                    TP 2.0, TP 1.6,
+                    SAE
+                    J1939, SAE J1708, Fault-Tolerant CAN</td>
+                </tr>
+                <tr class="modal-table__spoiler">
+                  <td colspan="4">
+                    Технические характеристики планшета <img src="img/arrow-down-red-icon.svg" width="16" height="16"
+                      alt="toggle">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Операционная система</td>
+                  <td class="modal-table__td-1">Android 4.4.2</td>
+                  <td class="modal-table__td-2">Android 7.0</td>
+                  <td class="modal-table__td-3">Android 7.0</td>
+                </tr>
+                <tr>
+                  <td>Связь</td>
+                  <td class="modal-table__item-sm modal-table__td-1">Wi-Fi (802.11 b/g/n)
+                    USB: 2.0, Mini USB 2.0
+                    BT V2.1 + EDR Class1,
+                    HDMI</td>
+                  <td class="modal-table__item-sm modal-table__td-2">Wi-Fi (802.11 b/g/n),
+                    USB: 2.0, Mini USB 2.0
+                    Bluetooth V2.1+EDR, Class1
+                    HDMI</td>
+                  <td class="modal-table__item-sm modal-table__td-3">Wi-Fi (802.11 b/g/n),
+                    USB: 2.0, Mini USB 2.0
+                    Bluetooth V2.1+EDR, Class1
+                    HDMI</td>
+                </tr>
+                <tr>
+                  <td>Экран</td>
+                  <td class="modal-table__item-sm modal-table__td-1">8-Inch Touchscreen, 1024*768 TFT-LCD ASAHI
+                    GLASS</td>
+                  <td class="modal-table__item-sm modal-table__td-2">8-Inch Touchscreen, 1920*1200 TFT-LCD ASAHI
+                    GLASS</td>
+                  <td class="modal-table__item-sm modal-table__td-3">8-Inch Touchscreen, 1920*1200 TFT-LCD ASAHI
+                    GLASS</td>
+                </tr>
+                <tr>
+                  <td>Процессор</td>
+                  <td class="modal-table__item-sm modal-table__td-1">1.3GHz + 1.7GHz, Samsung Exynos, HEXA-CORE</td>
+                  <td class="modal-table__item-sm modal-table__td-2">2.3GHz + 1.7GHz, Qualcomm 660, OCTA-CORE</td>
+                  <td class="modal-table__item-sm modal-table__td-3">2.3GHz + 1.7GHz, Qualcomm 660, OCTA-CORE</td>
+                </tr>
+                <tr>
+                  <td>Память</td>
+                  <td class="modal-table__td-1">64GB SSD / 2GB RAM</td>
+                  <td class="modal-table__td-2">128GB SSD / 4GB RAM</td>
+                  <td class="modal-table__td-3">128GB SSD / 4GB RAM</td>
+                </tr>
+                <tr>
+                  <td>Дополнительная память</td>
+                  <td class="modal-table__td-1">SD Card до 32GB</td>
+                  <td class="modal-table__td-2">SD Card до 128GB</td>
+                  <td class="modal-table__td-3">SD Card до 128GB</td>
+                </tr>
+                <tr>
+                  <td>Батарея</td>
+                  <td class="modal-table__td-1">10000 mAh</td>
+                  <td class="modal-table__td-2">11600 mAh</td>
+                  <td class="modal-table__td-3">11600 mAh</td>
+                </tr>
+                <tr>
+                  <td>Камера</td>
+                  <td class="modal-table__td-1">8MP Rear</td>
+                  <td class="modal-table__td-2">16MP Rear / 5MP Front</td>
+                  <td class="modal-table__td-3">16MP Rear / 5MP Front</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="modal__close" data-modal-close>
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.8437 0.84375L0.84375 21.8437M0.84375 0.84375L21.8437 21.8437" stroke="#E0E4EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-video" id="modal-video" aria-hidden="true">
+  <div class="modal__wrapper">
+    <div class="modal__scroll-wrapper" data-simplebar>
+      <div class="modal__inner">
+        <div class="modal__content">
+          <video id="player" data-poster="img/poster.jpg" playsinline controls>
+            <source src="video/remote.mp4" type="video/mp4" />
+          </video>
+          <button class="modal__close" data-modal-close><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.8437 0.84375L0.84375 21.8437M0.84375 0.84375L21.8437 21.8437" stroke="#E0E4EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</body>
+
+</html>

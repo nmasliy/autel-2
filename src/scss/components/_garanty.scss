@@ -1,0 +1,56 @@
+.garanty {
+  position: relative;
+  overflow: hidden;
+  background-color: #141111;
+
+  &::before {
+    @include bg-circle(368px);
+
+    left: -138px;
+    bottom: -74px;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 970px;
+  }
+
+  &__subtitle {
+    margin: 0 auto 50px;
+    max-width: 291px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 28px;
+  }
+
+  &__item {
+    border: 1px solid $g2-color;
+    border-radius: 10px;
+    padding: 36px 25px;
+    text-align: center;
+    color: $g1-color;
+
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 12px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 13px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+  }
+}

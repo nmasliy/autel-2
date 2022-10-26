@@ -1,0 +1,57 @@
+.trust {
+  position: relative;
+
+  &::before {
+    @include bg-circle(581px, 200px, 0.4);
+
+    left: -191px;
+    bottom: 16px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1.54fr;
+    gap: 0 27px;
+  }
+
+  &__items {
+    counter-reset: trust;
+    padding-top: 15px;
+  }
+
+  &__item {
+    @include mb(22px);
+
+    counter-increment: trust;
+    display: flex;
+    border: 1px solid $g2-color;
+    border-radius: 10px;
+  }
+
+  &__img {
+    @include flex-all-center;
+
+    flex-shrink: 0;
+    border-right: 1px solid $g2-color;
+    width: 256px;
+    height: 218px;
+  }
+
+  &__name {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    padding: 40px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $g1-color;
+
+    &::before {
+      content: "0" counter(trust) "/ ";
+      margin-right: 4px;
+      color: $accent-color;
+    }
+  }
+}

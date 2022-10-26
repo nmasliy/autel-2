@@ -1,0 +1,59 @@
+.video {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  &__container {
+    @include bg-cover;
+    @include flex-all-center;
+
+    position: relative;
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 15px;
+    min-height: 560px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 40px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black-color, 0);
+    }
+
+    &--accent {
+      &::before {
+        background-color: rgba($accent-color, 0.6);
+      }
+    }
+
+    &--border {
+      border: 8px solid #000;
+    }
+  }
+
+  &__inner {
+    z-index: 2;
+    text-align: center;
+  }
+
+  &__play {
+    margin: 0 auto 26px;
+  }
+
+  &__title {
+    margin: 0 auto 18px;
+    max-width: 700px;
+    color: $light-color;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    max-width: 420px;
+    color: $light-color;
+  }
+}

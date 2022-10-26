@@ -1,0 +1,136 @@
+.partners {
+  background-color: #141111;
+
+  &__subtitle {
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 292px auto;
+    gap: 0 24px;
+  }
+
+  &__tabs {
+    &-item {
+      &.is-more {
+        .partners__item:nth-child(6) ~ .partners__item {
+          display: flex;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      border: 1px solid $g2-color;
+      border-top: none;
+      padding: 12px 40px;
+      background-color: #141111;
+      transition: $transition;
+
+      @include hover {
+        background-color: rgba(210, 35, 42, 10%);
+      }
+    }
+
+    li {
+      font-family: "AlumniSans", sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+      color: $g1-color;
+
+      &:first-child a {
+        border-top: 1px solid $g2-color;
+        border-radius: 10px 10px 0 0;
+      }
+
+      &:last-child a {
+        border-radius: 0 0 10px 10px;
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+    gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $g2-color;
+    border-radius: 10px;
+    padding: 34px 10px 30px 50px;
+
+    &:nth-child(6) ~ .partners__item {
+      display: none;
+    }
+  }
+
+  &__name {
+    margin-bottom: 33px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $g1-color;
+  }
+
+  &__contacts {
+    margin-bottom: 27px;
+
+    &-icon {
+      @include flex-all-center;
+      @include circle(21px, $g2-color);
+
+      flex-shrink: 0;
+      margin-right: 8px;
+    }
+
+    li {
+      @include mb(8px);
+
+      line-height: 1.4;
+      color: $g1-color;
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    transition: $transition;
+
+    &::after {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      margin-left: 8px;
+      width: 24px;
+      height: 24px;
+      background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.25' fill='%23D2232A' stroke='%23D2232A' stroke-width='1.5'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.20007 11.9994C7.20007 11.668 7.4687 11.3994 7.80007 11.3994H16.2001C16.5314 11.3994 16.8001 11.668 16.8001 11.9994C16.8001 12.3308 16.5314 12.5994 16.2001 12.5994H7.80007C7.4687 12.5994 7.20007 12.3308 7.20007 11.9994Z' fill='%23E0E4EB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.5758 7.37593C11.8101 7.14162 12.19 7.14162 12.4243 7.37593L16.6243 11.5759C16.8586 11.8102 16.8586 12.1901 16.6243 12.4245L12.4243 16.6245C12.19 16.8588 11.8101 16.8588 11.5758 16.6245C11.3414 16.3901 11.3414 16.0102 11.5758 15.7759L15.3515 12.0002L11.5758 8.22446C11.3414 7.99014 11.3414 7.61025 11.5758 7.37593Z' fill='%23E0E4EB'/%3E%3C/svg%3E%0A") center no-repeat;
+      transition: $transition;
+    }
+
+    @include hover {
+      color: $accent-color;
+
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.25' fill='%23FFFFFF' stroke='%23ffffff' stroke-width='1.5'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.20007 11.9994C7.20007 11.668 7.4687 11.3994 7.80007 11.3994H16.2001C16.5314 11.3994 16.8001 11.668 16.8001 11.9994C16.8001 12.3308 16.5314 12.5994 16.2001 12.5994H7.80007C7.4687 12.5994 7.20007 12.3308 7.20007 11.9994Z' fill='%23D2232A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.5758 7.37593C11.8101 7.14162 12.19 7.14162 12.4243 7.37593L16.6243 11.5759C16.8586 11.8102 16.8586 12.1901 16.6243 12.4245L12.4243 16.6245C12.19 16.8588 11.8101 16.8588 11.5758 16.6245C11.3414 16.3901 11.3414 16.0102 11.5758 15.7759L15.3515 12.0002L11.5758 8.22446C11.3414 7.99014 11.3414 7.61025 11.5758 7.37593Z' fill='%23D2232A'/%3E%3C/svg%3E%0A");
+      }
+    }
+  }
+}

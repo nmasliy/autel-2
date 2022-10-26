@@ -1,0 +1,61 @@
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 16px 30px;
+  min-width: 237px;
+  font-family: "AlumniSans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $light-color;
+  background: transparent;
+  background-color: $accent-color;
+  transition: $transition;
+  cursor: pointer;
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+    background-color: #c8070f;
+  }
+
+  @include hover {
+    &:hover {
+      box-shadow: 0 1px 25px rgba(210, 35, 42, 80%);
+    }
+  }
+}
+
+.btn-link {
+  border: none;
+  padding: 0;
+  font-family: "AlumniSans", sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $light-color;
+  background: transparent;
+  transition: $transition;
+  cursor: pointer;
+
+  @include hover {
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.btn-outline {
+  border: 2px solid $g1-color;
+  padding: 16px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  background-color: $black-color;
+
+  &--accent {
+    border-color: $accent-color;
+    border-radius: 2px;
+    color: $accent-color;
+  }
+}

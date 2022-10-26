@@ -1,0 +1,58 @@
+.comfort {
+  position: relative;
+  background-color: #141111;
+
+  &::before {
+    @include bg-circle(368px, 50px);
+
+    right: -120px;
+    top: 197px;
+    z-index: -1;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 28px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      @include triangle(15px );
+
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  &__name {
+    border: 1px solid $g2-color;
+    border-bottom: none;
+    padding: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: $g1-color;
+  }
+
+  &__img {
+    margin-top: auto;
+
+    picture {
+      display: flex;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

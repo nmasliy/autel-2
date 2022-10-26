@@ -1,0 +1,81 @@
+.complect {
+  background: url("../img/complect-bg.png") no-repeat center / cover;
+  background-image:
+    image-set(
+      url("../img/complect-bg@1x.webp") 1x
+    );
+
+  &__subtitle {
+    margin: 0 auto 50px;
+    max-width: 534px;
+  }
+
+  &__list {
+    counter-reset: complect;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    counter-increment: complect;
+    position: relative;
+    flex-grow: 1;
+    padding: 35px 24px;
+    width: calc(100% / 3);
+    box-shadow: 0 0 0 1px $g2-color;
+    color: $g1-color;
+
+    &::before {
+      @include circle(22px);
+      @include flex-all-center;
+
+      content: "0" counter(complect);
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      font-family: "AlumniSans", sans-serif;
+      font-weight: 500;
+    }
+
+    p {
+      @include mb(15px);
+
+      font-size: 14px;
+      line-height: 1.4;
+
+      span {
+        font-weight: 500;
+        color: $accent-color;
+      }
+    }
+
+    &:first-child {
+      border-radius: 10px 0 0;
+      width: 48%;
+    }
+
+    &:last-child {
+      border-radius: 0 0 10px;
+    }
+
+    &:nth-child(3) {
+      border-radius: 0 0 0 10px;
+    }
+
+    &:nth-child(2) {
+      padding-right: 72px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 13px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  @supports (-webkit-appearance:none) {
+    background-image: url("../img/complect-bg.webp");
+  }
+}

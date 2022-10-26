@@ -1,0 +1,78 @@
+.chars {
+  position: relative;
+  overflow: hidden;
+  background-color: #141111;
+
+  &::after {
+    @include bg-circle(581px, 250px, 0.25);
+
+    right: -157px;
+    top: -291px;
+  }
+
+  &__title {
+    margin: 0 auto 22px;
+    max-width: 820px;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 0 28px;
+  }
+
+  &__item {
+    border: 1px solid $g2-color;
+    border-radius: 10px;
+    padding: 28px 27px;
+  }
+
+  &__img {
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    margin-bottom: 16px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: $accent-color;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $light-color;
+
+    svg {
+      flex-shrink: 0;
+      margin-left: 8px;
+      fill: transparent;
+
+      circle {
+        transition: $transition;
+      }
+    }
+
+    @include hover {
+      svg {
+        circle {
+          fill: $accent-color;
+          stroke: transparent;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+[data-tabs-trigger] {
+  &.is-active {
+    background-color: $accent-color;
+  }
+}
+
+[data-tabs-content] {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}

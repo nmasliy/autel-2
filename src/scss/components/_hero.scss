@@ -1,0 +1,138 @@
+.hero {
+  position: relative;
+  padding-top: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -55px;
+    z-index: -1;
+    width: 100%;
+    height: 414px;
+    background: url("../img/hero-bg.png") center / cover no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 351px;
+    z-index: -2;
+    width: 100%;
+    height: 107px;
+    background: linear-gradient(180deg, rgba(7, 7, 7, 90%) 0%, rgba(0, 0, 0, 0%) 100%);
+  }
+
+  &__circle {
+    @include bg-circle(652px);
+
+    left: 0;
+    right: 0;
+    top: -159px;
+    z-index: -1;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: $light-color;
+  }
+
+  &__subtitle {
+    font-size: 26px;
+    color: $light-color;
+  }
+
+  &__img-mob {
+    display: none;
+  }
+
+  &__img {
+    @include flex-h-center;
+
+    position: relative;
+    top: -38px;
+    z-index: -1;
+    margin-bottom: -170px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+    padding: 0 180px;
+  }
+
+  &__item {
+    position: relative;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.25;
+    color: $g1-color;
+
+    &::before {
+      position: absolute;
+      top: -76px;
+      width: 113px;
+      height: 94px;
+      background: url("../img/hero-line.svg") center no-repeat;
+    }
+
+    &:first-child {
+      &::before {
+        content: "";
+        left: -140px;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        content: "";
+        right: -160px;
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+
+.hero-benefits {
+  &__list {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 228px 129px 151px 209px;
+    gap: 30px 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 20px;
+      z-index: -1;
+      margin: 0 auto;
+      width: 770px;
+      height: 1px;
+      background-color: $g3-color;
+    }
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__icon {
+    @include circle(40px);
+    @include flex-all-center;
+
+    margin: 0 auto 13px;
+  }
+
+  &__text {
+    line-height: 1.4;
+    color: $g1-color;
+  }
+}

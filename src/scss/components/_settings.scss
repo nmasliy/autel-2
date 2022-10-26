@@ -1,0 +1,99 @@
+.settings {
+  background-color: rgba(139, 103, 103, 7%);
+
+  &__inner {
+    padding-bottom: 40px;
+  }
+
+  &__subtitle {
+    margin-bottom: 44px;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  &__col {
+    margin-top: 20px;
+  }
+
+  &__list-item {
+    @include mb(56px);
+
+    font-family: "AlumniSans", sans-serif;
+  }
+
+  &__list-num {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 32px;
+    color: $accent-color;
+  }
+
+  &__list-text {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__img {
+    margin-top: 0;
+  }
+
+  &__footer {
+    margin-top: -130px;
+    padding-top: 120px;
+    background: linear-gradient(180deg, rgba(5, 4, 4, 30%) 0%, rgba(67, 67, 67, 0%) 100%);
+  }
+
+  &__footer-title {
+    margin-bottom: 30px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 0 0.5px #535353;
+
+    &::after {
+      @include triangle(16px);
+
+      content: "";
+      position: absolute;
+      right: 18px;
+      top: 18px;
+    }
+
+    &:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+
+    &:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  &__icon {
+    @include circle(40px, transparent);
+    @include flex-all-center;
+
+    margin-bottom: 28px;
+    border: 1px solid $g2-color;
+  }
+
+  &__item-text {
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+  }
+}

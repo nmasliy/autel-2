@@ -1,0 +1,42 @@
+.player-icon {
+  @include circle(64px, $g1-color);
+  @include flex-all-center;
+
+  transition: $transition;
+
+  path {
+    transition: $transition;
+  }
+
+  @include hover {
+    background-color: $accent-color;
+
+    path {
+      fill: $light-color;
+    }
+  }
+}
+
+.player-icon-sm {
+  @include circle(42px, $g1-color);
+  @include flex-all-center;
+
+  transition: $transition;
+
+  path {
+    transition: $transition;
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  @include hover {
+    background-color: $accent-color;
+
+    path {
+      fill: $light-color;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.section-title {
+  margin-bottom: 22px;
+  font-family: "AlumniSans", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $g1-color;
+
+  span {
+    text-transform: none;
+  }
+}
+
+.section-subtitle {
+  font-size: 20px;
+  line-height: 1.4;
+  color: $g1-color;
+}
+
+.color-accent {
+  color: $accent-color;
+}
+
+.color-white {
+  color: $light-color;
+}
+
+.text-medium {
+  font-weight: 500;
+}

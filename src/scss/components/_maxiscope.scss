@@ -1,0 +1,67 @@
+.maxiscope {
+  position: relative;
+
+  &::before {
+    @include bg-circle;
+
+    left: -81px;
+    top: 91px;
+    z-index: -1;
+  }
+
+  &__title {
+    margin: 0 auto 22px;
+  }
+
+  &__subtitle {
+    margin: 0 auto 50px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 235px auto 235px;
+    border: 1px solid $g2-color;
+    border-radius: 10px;
+    background-color: rgba(#0c0c0c, 0.5);
+  }
+
+  &__col {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &__item {
+    @include flex-all-center;
+
+    flex-direction: column;
+
+    p {
+      color: $g1-color;
+    }
+
+    &:first-child {
+      border-bottom: 1px solid $g2-color;
+    }
+  }
+
+  &__value {
+    margin-bottom: 4px;
+    font-family: "AlumniSans", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: $accent-color;
+  }
+
+  &__img {
+    margin-top: -1px;
+    margin-bottom: -1px;
+
+    img {
+      height: calc(100% + 2px);
+    }
+
+    picture {
+      display: flex;
+    }
+  }
+}
