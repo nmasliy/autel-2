@@ -12,6 +12,11 @@
     display: flex;
   }
 
+  &__bottom-logo {
+    display: flex;
+    margin-right: 15px;
+  }
+
   &__btn {
     display: inline-block;
     margin-left: 70px;
@@ -68,20 +73,20 @@
     position: relative;
     margin-right: auto;
     margin-left: 70px;
-    padding: 5px 0 5px 32px;
+    padding: 5px 0 5px 44px;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: 0.01em;
     transition: $transition;
 
     &::before {
-      @include circle(26px);
+      @include circle(34px);
 
       content: "";
       position: absolute;
       left: 0;
       top: 50%;
-      background: url("../img/phone-icon.svg") center no-repeat;
+      background: url("../img/phone-icon.svg") center / 20px no-repeat;
       background-color: $accent-color;
       transform: translateY(-50%);
     }

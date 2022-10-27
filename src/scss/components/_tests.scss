@@ -1,7 +1,8 @@
 .tests {
+  background: #141111;
+
   &__subtitle {
     margin-bottom: 50px;
-    max-width: 420px;
   }
 
   &__list {
@@ -29,10 +30,11 @@
   }
 
   &__name {
-    margin-bottom: 13px;
-    font-family: "AlumniSans", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
+    margin-bottom: 16px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
   }
 
   &__preview {

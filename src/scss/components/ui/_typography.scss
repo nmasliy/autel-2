@@ -1,9 +1,9 @@
 .section-title {
   margin-bottom: 22px;
-  font-family: "AlumniSans", sans-serif;
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 1;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: $g1-color;
@@ -17,6 +17,13 @@
   font-size: 20px;
   line-height: 1.4;
   color: $g1-color;
+}
+
+.block-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .color-accent {

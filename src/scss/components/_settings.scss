@@ -15,25 +15,33 @@
   }
 
   &__col {
-    margin-top: 20px;
+    margin-top: 15px;
+
+    &:first-child {
+      margin-left: 55px;
+    }
+
+    &:last-child {
+      margin-left: 38px;
+    }
   }
 
   &__list-item {
-    @include mb(56px);
+    @include mb(30px);
 
-    font-family: "AlumniSans", sans-serif;
+    min-height: 95px;
   }
 
   &__list-num {
     margin-bottom: 8px;
+    font-family: "Oswald", sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 26px;
     color: $accent-color;
   }
 
   &__list-text {
-    font-weight: 500;
-    font-size: 24px;
+    line-height: 1.4;
   }
 
   &__img {
@@ -47,9 +55,8 @@
   }
 
   &__footer-title {
-    margin-bottom: 30px;
-    font-family: "AlumniSans", sans-serif;
-    font-weight: 500;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
@@ -84,7 +91,7 @@
   }
 
   &__icon {
-    @include circle(40px, transparent);
+    @include circle(50px, transparent);
     @include flex-all-center;
 
     margin-bottom: 28px;
@@ -92,8 +99,6 @@
   }
 
   &__item-text {
-    font-family: "AlumniSans", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
+    line-height: 1.4;
   }
 }

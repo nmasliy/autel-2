@@ -1,7 +1,6 @@
 .compare {
   &__subtitle {
-    margin: 0 auto 34px;
-    max-width: 457px;
+    margin: 0 auto 55px;
   }
 
   &__desc-item {
@@ -94,9 +93,8 @@
   .compare__table-title {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: "AlumniSans", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
+    font-family: "Oswald", sans-serif;
+    font-size: 26px;
     line-height: 1.1;
 
     &.color-accent {

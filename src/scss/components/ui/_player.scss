@@ -2,6 +2,7 @@
   @include circle(64px, $g1-color);
   @include flex-all-center;
 
+  flex-shrink: 0;
   transition: $transition;
 
   path {
@@ -21,6 +22,7 @@
   @include circle(42px, $g1-color);
   @include flex-all-center;
 
+  flex-shrink: 0;
   transition: $transition;
 
   path {
