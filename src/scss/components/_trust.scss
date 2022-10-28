@@ -7,6 +7,7 @@
 
     left: -191px;
     bottom: 126px;
+    z-index: -1;
   }
 
   &__inner {
@@ -36,6 +37,10 @@
     }
   }
 
+  &__title-break {
+    display: block;
+  }
+
   &__item-info {
     padding: 33px;
   }
@@ -46,7 +51,6 @@
     flex-shrink: 0;
     border-right: 1px solid $g2-color;
     width: 190px;
-    height: 195px;
   }
 
   &__name {

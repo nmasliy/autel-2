@@ -24,4 +24,4 @@ function initMobileSlider(parent, wrapper, items, breakpoint = 768) {
   }
 }
 
-initMobileSlider(".comfort__slider", ".comfort__list", ".comfort__item");
+// initMobileSlider(".comfort__slider", ".comfort__list", ".comfort__item");

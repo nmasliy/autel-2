@@ -8,6 +8,7 @@
   &__items {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 60px;
   }
 
@@ -114,7 +115,7 @@
   }
 
   &__arrow {
-    margin: 0 55px;
+    margin: 0 25px;
   }
 
   &__value {
@@ -130,6 +131,7 @@
     @include circle(40px, transparent);
     @include flex-all-center;
 
+    flex-shrink: 0;
     border: 1px solid $g1-color;
   }
 

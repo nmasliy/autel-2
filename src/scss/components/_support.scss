@@ -4,10 +4,9 @@
   &::before {
     @include bg-circle(800px);
 
-    content: "";
-    position: absolute;
     left: -324px;
     bottom: -270px;
+    z-index: -1;
   }
 
   &__content {
@@ -15,9 +14,6 @@
     grid-template-columns: 1.45fr 1fr;
     margin-bottom: 90px;
     gap: 0 67px;
-  }
-
-  &__left {
   }
 
   &__subtitle {
@@ -47,6 +43,7 @@
         @include flex-all-center;
 
         content: "0" counter(list);
+        flex-shrink: 0;
         margin-right: 12px;
         font-family: "AlumniSans", sans-serif;
         font-weight: 500;
