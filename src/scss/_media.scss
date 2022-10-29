@@ -1169,6 +1169,10 @@
     }
   }
 
+  .support__preview img {
+    min-height: 180px;
+  }
+
   .complect {
     &__item {
       border-radius: 0;

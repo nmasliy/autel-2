@@ -24,9 +24,6 @@
     }
   }
 
-  &__right {
-  }
-
   &__list {
     @include mb(42px);
 
@@ -107,6 +104,10 @@
     @include flex-h-center;
 
     width: 100%;
+
+    .btn-link {
+      text-align: left;
+    }
   }
 
   &__play {
