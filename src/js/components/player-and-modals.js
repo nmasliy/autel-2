@@ -2,7 +2,6 @@ import Plyr from 'plyr';
 
 import SimpleModal from '../functions/modals';
 
-
 const player = new Plyr('#player', {
   controls: [
     'play-large',
@@ -42,7 +41,9 @@ $videoTriggers.forEach(($item) => {
   });
 });
 
-const $modalCharsTriggers = document.querySelectorAll('.chars__btn[data-chars]');
+const $modalCharsTriggers = document.querySelectorAll(
+  '.chars__btn[data-chars]'
+);
 
 const $modalChars = document.querySelector('#modal-chars');
 
@@ -53,9 +54,9 @@ const options = {
     if (modal.id === 'modal-video') {
       player.stop();
     } else if (modal.id === 'modal-chars') {
-      $modalChars.classList.remove('is-active-1')
-      $modalChars.classList.remove('is-active-2')
-      $modalChars.classList.remove('is-active-3')
+      $modalChars.classList.remove('is-active-1');
+      $modalChars.classList.remove('is-active-2');
+      $modalChars.classList.remove('is-active-3');
     }
   },
   nested: false,
@@ -64,14 +65,16 @@ const options = {
 const modals = new SimpleModal(options);
 modals.init();
 
-$modalCharsTriggers.forEach($item => {
-  $item.addEventListener('click', function() {
+$modalCharsTriggers.forEach(($item) => {
+  $item.addEventListener('click', function () {
     const activeItem = $item.dataset.chars;
     const name = $item.dataset.name;
-    const $tableTitle = document.querySelector('.modal-table__title-mob');
+    const $tableTitleMob = document.querySelector('.modal-table__title-mob');
+    const $tableTitle = document.querySelector('.modal-complect__title');
 
-    $tableTitle.innerHTML = 'Характеристики <br/>' + name;
+    $tableTitleMob.innerHTML = 'Характеристики <br/>' + name;
+    $tableTitle.innerHTML = `комплектация <span>${name}</span>`;
 
-    $modalChars.classList.add('is-active-' + activeItem)
-  })
-})
+    $modalChars.classList.add('is-active-' + activeItem);
+  });
+});

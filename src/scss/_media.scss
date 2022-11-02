@@ -648,6 +648,36 @@
     }
   }
 
+  .module {
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    &__inner {
+      display: block;
+      text-align: center;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &__video {
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin: 0 auto 16px;
+      max-width: 285px;
+    }
+
+    &__content {
+      margin-bottom: 30px;
+    }
+  }
+
   .remote {
     &__video-items {
       justify-content: center;
