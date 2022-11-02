@@ -1394,6 +1394,10 @@
   .modal-table {
     font-size: 14px;
 
+    .modal-table__title-mob {
+      text-align: left;
+    }
+
     &__title-mob {
       font-size: 26px;
     }
