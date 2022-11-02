@@ -2292,13 +2292,39 @@
 
 // 476
 @include small-mobile {
+  .modal-chars .modal-table thead td {
+    flex-shrink: 1;
+  }
+
+  .modal-table__title-mob {
+    font-size: 22px;
+  }
+
+  .compare__time-item {
+    font-size: 15px;
+  }
+
   .compare__table {
     overflow: auto;
     margin: -3px -15px;
     padding: 3px 15px;
 
     tr:first-child img {
-      width: 90px;
+      width: 80px;
+    }
+
+    td {
+      padding: 10px 4px;
+      min-width: auto;
+
+      &:nth-child(1) {
+        width: 80px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        min-width: auto;
+      }
     }
   }
 
@@ -2531,20 +2557,6 @@
 
     &__item-info {
       padding-left: 39px;
-    }
-  }
-
-  .compare__table {
-    td {
-      min-width: 120px;
-
-      &:nth-child(1) {
-        min-width: 90px;
-      }
-
-      &:nth-child(2) {
-        min-width: 120px;
-      }
     }
   }
 

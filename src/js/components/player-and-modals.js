@@ -71,9 +71,11 @@ $modalCharsTriggers.forEach(($item) => {
     const name = $item.dataset.name;
     const $tableTitleMob = document.querySelector('.modal-table__title-mob');
     const $tableTitle = document.querySelector('.modal-complect__title');
+    const $tableTitle2 = document.querySelector('.modal-chars__title');
 
-    $tableTitleMob.innerHTML = 'Характеристики <br/>' + name;
+    $tableTitleMob.innerHTML = `Характеристики <br/> <span>${name}</span>`;
     $tableTitle.innerHTML = `комплектация <span>${name}</span>`;
+    $tableTitle2.innerHTML = `Характеристики <span>${name}</span>`;
 
     $modalChars.classList.add('is-active-' + activeItem);
   });
