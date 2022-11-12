@@ -60,6 +60,10 @@
     text-transform: uppercase;
     color: $g1-color;
 
+    span {
+      text-transform: none;
+    }
+
     &::before {
       content: "0" counter(trust) "/ ";
       display: block;

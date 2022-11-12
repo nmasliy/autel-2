@@ -670,7 +670,6 @@
 
     &__title {
       margin: 0 auto 16px;
-      max-width: 285px;
     }
 
     &__content {
@@ -2548,7 +2547,15 @@
 
   .report {
     &__qr {
-      width: calc(50% - 11px);
+      width: calc(50% - 6px);
+
+      p {
+        font-size: 13px;
+      }
+
+      &:last-child {
+        margin-left: 12px;
+      }
     }
   }
 
